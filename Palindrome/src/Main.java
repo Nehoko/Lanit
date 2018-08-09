@@ -33,8 +33,7 @@ public class Main {
     //Проверка текста на запрещённые символы
     private static void checkSymbols(String text){
         try{
-            if(!Pattern.matches("^([a-z]|[A-Z]|[а-я]|[А-Я]|[0-9])+.+$",text)&&
-            Pattern.matches("[+\\-=%/`~^]",text)){
+            if(Pattern.matches("[+\\-=%/`~^]",text)){
                 throw new Exception("Введен один или несколько запрещённых символов: ^ + = - * % / `");
             }
         }catch (Exception e){
@@ -45,19 +44,18 @@ public class Main {
     private static void wordPalindrome(String text){
         //Разбиение предложения на отдельные слова по пробелу
         String[] strings = text.split("\\s");
-        for (int i = 0; i<strings.length-1; i++){
+        for (int i = 0; i<strings.length; i++){
             //Отделяем слово от ненужных знаков
-            String word = strings[i].replaceAll("(?U)\\p{Punct}","");
+            String word = strings[i].replaceAll("\\p{Punct}","");
             strings[i] = word;
-
         }
         ArrayList<String> palindromes = new ArrayList<>();
-        for (int j = 0; j<strings.length-1;j++) {
-            String words = strings[j];
+        for (String string : strings) {
+            String words = string;
             char[] chars = words.toCharArray();
 
             //Цикл преобразования ЗАГЛАВНЫХ букв в строчные
-            for (int i = 0; i < chars.length - 1; i++) {
+            for (int i = 0; i < chars.length; i++) {
                 char ch = chars[i];
                 chars[i] = Character.toLowerCase(ch);
             }
@@ -67,8 +65,8 @@ public class Main {
             StringBuilder sb = new StringBuilder(words);
             sb.reverse();
             String sdrow = sb.toString();
-            if (words.equals(sdrow) && words.length()>1){
-                palindromes.add(strings[j]);
+            if (words.equals(sdrow) && words.length() > 1) {
+                palindromes.add(string);
             }
         }
         if (palindromes.size()>0)
@@ -83,8 +81,8 @@ public class Main {
         //Разделение предложений по точкам и пробелам после точки
         String[] strings = text.split("\\.\\s");
         ArrayList<String> palindromes = new ArrayList<>();
-        for (int j = 0; j < strings.length;j++){
-            String sentence = strings[j].replaceAll("[\\p{Punct}\\s]","");
+        for (String string : strings) {
+            String sentence = string.replaceAll("[\\p{Punct}\\s]", "");
             char[] chars = sentence.toCharArray();
             //Цикл преобразования ЗАГЛАВНЫХ букв в строчные
             for (int i = 0; i < chars.length - 1; i++) {
@@ -97,8 +95,8 @@ public class Main {
             StringBuilder sb = new StringBuilder(sentence);
             sb.reverse();
             String ecnetnes = sb.toString();
-            if (sentence.equals(ecnetnes)){
-                palindromes.add(strings[j]);
+            if (sentence.equals(ecnetnes)) {
+                palindromes.add(string);
             }
         }
         if (palindromes.size()>0)
