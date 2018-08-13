@@ -7,10 +7,9 @@ class Palindrome {
         checkPalindrome(text);
     }
     private void checkPalindrome(String text) {
-        char[] chars = text.toCharArray();
         try {
             //Проверка количества символов
-            if (chars.length == 1 || chars.length > 500) {
+            if (text.length() == 1 || text.length() > 500) {
                 throw new Exception("Неверное кол-во символов: введите текст с кол-вом символов от 2 до 500!");
             }
             //Проверка на наличие запрещённых символов
@@ -38,7 +37,7 @@ class Palindrome {
     //Проверка текста на слова-палиндромы
     private void wordPalindrome(String text){
         //Разбиение предложения на отдельные слова по пробелу
-        String[] strings = text.split("\\s");
+        String[] strings = text.split("\\s\\n\\r");
         for (int i = 0; i<strings.length; i++){
             //Отделяем слово от ненужных знаков
             String word = strings[i].replaceAll("\\p{Punct}","");
@@ -46,15 +45,9 @@ class Palindrome {
         }
         ArrayList<String> palindromes = new ArrayList<>();
         for (String string : strings) {
-            String words = string;
-            char[] chars = words.toCharArray();
 
-            //Цикл преобразования ЗАГЛАВНЫХ букв в строчные
-            for (int i = 0; i < chars.length; i++) {
-                char ch = chars[i];
-                chars[i] = Character.toLowerCase(ch);
-            }
-            words = new String(chars);
+            //Замена ЗАГЛАВНЫХ букв прописными
+            String words = string.toLowerCase();
 
             //Сама проверка слов
             StringBuilder sb = new StringBuilder(words);
@@ -78,13 +71,9 @@ class Palindrome {
         ArrayList<String> palindromes = new ArrayList<>();
         for (String string : strings) {
             String sentence = string.replaceAll("[\\p{Punct}\\s]", "");
-            char[] chars = sentence.toCharArray();
+
             //Цикл преобразования ЗАГЛАВНЫХ букв в строчные
-            for (int i = 0; i < chars.length - 1; i++) {
-                char ch = chars[i];
-                chars[i] = Character.toLowerCase(ch);
-            }
-            sentence = new String(chars);
+            sentence = sentence.toLowerCase();
 
             //Сама проверка предложения
             StringBuilder sb = new StringBuilder(sentence);

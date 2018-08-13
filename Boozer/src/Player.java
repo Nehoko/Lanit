@@ -1,27 +1,27 @@
 import java.util.HashSet;
 import java.util.LinkedList;
 
-class Player {
+public class Player {
     private String name;
 
-    String getName() {
+    public String getName() {
         return this.name;
     }
 
-    Integer getHand(){
+    public Integer getHand(){
         return hand.size();
     }
 
-    Player(String name) {
+    public Player(String name) {
         this.name = name;
     }
 
     private LinkedList<Card> hand = new LinkedList<>();
 
-    void addCard(Card card) {
+    public void addCard(Card card) {
         hand.add(card);
     }
-    Card dropCard(){
+    public Card dropCard(){
         try{
             Card card = hand.getFirst();
             hand.removeFirst();
@@ -30,7 +30,7 @@ class Player {
             return null;
         }
     }
-    void addTable(HashSet<Card> table){
+    public void addTable(HashSet<Card> table){
         hand.addAll(table);
     }
 }

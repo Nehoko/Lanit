@@ -2,66 +2,35 @@ import java.util.*;
 
 import static java.lang.Integer.MAX_VALUE;
 
-class Boozer {
+public class Boozer implements CardGame {
+    private CardDeck cardDeck;
+    private LinkedList<Card> cards;
 
-    Boozer(Player player1, Player player2, Player player3, Player player4){
-        ArrayList<Player> players = new ArrayList<>();
+    private ArrayList<Player> players = new ArrayList<>();
+
+    public Boozer(Player player1, Player player2, Player player3, Player player4){
         players.add(player1);
         players.add(player2);
         players.add(player3);
         players.add(player4);
-        play(players);
     }
-    private void play(ArrayList<Player> players){
+
+    @Override
+    public void play(){
         //Создание колоды карт
-        ArrayList<Card> cards = new ArrayList<>(36);
-        cards.add(new Card(6,"6 Черви"));
-        cards.add(new Card(6,"6 Крести"));
-        cards.add(new Card(6,"6 Пики"));
-        cards.add(new Card(6,"6 Буби"));
-        cards.add(new Card(7,"7 Черви"));
-        cards.add(new Card(7,"7 Крести"));
-        cards.add(new Card(7,"7 Пики"));
-        cards.add(new Card(7,"7 Буби"));
-        cards.add(new Card(8,"8 Черви"));
-        cards.add(new Card(8,"8 Кретси"));
-        cards.add(new Card(8,"8 Пики"));
-        cards.add(new Card(8,"8 Буби"));
-        cards.add(new Card(9,"9 Черви"));
-        cards.add(new Card(9,"9 Крести"));
-        cards.add(new Card(9,"9 Пики"));
-        cards.add(new Card(9,"9 Буби"));
-        cards.add(new Card(10,"10 Черви"));
-        cards.add(new Card(10,"10 Крести"));
-        cards.add(new Card(10,"10 Пики"));
-        cards.add(new Card(10,"10 Буби"));
-        cards.add(new Card(11,"Валет Черви"));
-        cards.add(new Card(11,"Валет Крести"));
-        cards.add(new Card(11,"Валет Пики"));
-        cards.add(new Card(11,"Валет Буби"));
-        cards.add(new Card(12,"Дама Черви"));
-        cards.add(new Card(12,"Дама Крести"));
-        cards.add(new Card(12,"Дама Пики"));
-        cards.add(new Card(12,"Дама Буби"));
-        cards.add(new Card(13,"Король Черви"));
-        cards.add(new Card(13,"Король Крести"));
-        cards.add(new Card(13,"Король Пики"));
-        cards.add(new Card(13,"Король Буби"));
-        cards.add(new Card(14,"Туз Черви"));
-        cards.add(new Card(14,"Туз Крести"));
-        cards.add(new Card(14,"Туз Пики"));
-        cards.add(new Card(14,"Туз Буби"));
+        cardDeck = new BoozerCardDeck(36);
+        cardDeck.shuffleDeck();
+        cards = new LinkedList<>(cardDeck.getCards());
 
         //Раздача карт на руки
         int j = 0;
         while(!cards.isEmpty()){
-            Random random = new Random();
-            int i = random.nextInt(cards.size());
-            players.get(j).addCard(cards.get(i));
-            cards.remove(i);
+            players.get(j).addCard(cards.getFirst());
+            cards.removeFirst();
             j++;
-            if (j==4) j = 0;
+            if (j==players.size()) j = 0;
         }
+
         //Начало игры
         HashSet<Card> table = new HashSet<>();
         HashMap<Player, Integer> round = new HashMap<>();
@@ -76,7 +45,7 @@ class Boozer {
                     System.out.println("Игрок " + player.getName() + " проиграл!");
                     break;
                 }
-                Card card = player.dropCard();
+                BoozerCard card = (BoozerCard) player.dropCard();
                 if(card == null){
                     System.out.println("Игрок " + player.getName() + " вышел из игры победителем!");
                 }else {
@@ -101,5 +70,25 @@ class Boozer {
                 }
             }
         }
+    }
+
+    @Override
+    public ArrayList<Player> getPlayers() {
+        return players;
+    }
+
+    @Override
+    public void setPlayers(ArrayList<Player> players) {
+        this.players = players;
+    }
+
+    @Override
+    public CardDeck getCardDeck() {
+        return cardDeck;
+    }
+
+    @Override
+    public void setCardDeck(CardDeck cardDeck) {
+        this.cardDeck = cardDeck;
     }
 }

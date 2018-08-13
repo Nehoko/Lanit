@@ -1,4 +1,4 @@
-public class Main {
+public class PlayingTable {
     public static void main(String[] args) {
         //Создание ботов
         Player Petya = new Player("Петя");
@@ -7,6 +7,7 @@ public class Main {
         Player Sanya = new Player("Саня");
 
         //Запуск игры и запись ботов на игру
-        new Boozer(Petya, Vacya, Kolya, Sanya);
+        CardGame boozer = new Boozer(Petya, Vacya, Kolya, Sanya);
+        boozer.play();
     }
 }
