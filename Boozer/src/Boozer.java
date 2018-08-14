@@ -43,7 +43,7 @@ public class Boozer implements CardGame {
                     System.out.println("Игрок " + player.getName() + " проиграл!");
                     break;
                 }
-                BoozerCard card = (BoozerCard) player.dropCard();
+                PlayCard card = (PlayCard) player.dropCard();
                 if(card == null){
                     System.out.println("Игрок " + player.getName() + " вышел из игры победителем!");
                 }else {

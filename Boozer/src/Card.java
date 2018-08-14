@@ -1,4 +1,2 @@
-public interface Card {
-    String getName();
-    void setName(String name);
+public abstract class Card {
 }
