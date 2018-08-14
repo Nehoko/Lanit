@@ -5,7 +5,6 @@ import static java.lang.Integer.MAX_VALUE;
 public class Boozer implements CardGame {
     private CardDeck cardDeck;
     private LinkedList<Card> cards;
-
     private ArrayList<Player> players = new ArrayList<>();
 
     public Boozer(Player player1, Player player2, Player player3, Player player4){
