@@ -1,4 +1,8 @@
-public class PlayCard extends Card{
+package ru.lanit.boozer.impl;
+
+import ru.lanit.boozer.api.Card;
+
+public class PlayCard extends Card {
     private int value;
     private String name;
     private String suit;

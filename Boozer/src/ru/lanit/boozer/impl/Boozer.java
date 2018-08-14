@@ -1,3 +1,9 @@
+package ru.lanit.boozer.impl;
+
+import ru.lanit.boozer.api.Card;
+import ru.lanit.boozer.api.CardDeck;
+import ru.lanit.boozer.api.CardGame;
+
 import java.util.*;
 
 import static java.lang.Integer.MAX_VALUE;
@@ -106,5 +112,15 @@ public class Boozer implements CardGame {
     @Override
     public void setCardDeck(CardDeck cardDeck) {
         this.cardDeck = cardDeck;
+    }
+
+    @Override
+    public void setPlayer(Player player) {
+        throw new UnsupportedOperationException("This method can't be used in this class.");
+    }
+
+    @Override
+    public Player getPlayer() {
+        throw new UnsupportedOperationException("This method can't be used in this class.");
     }
 }

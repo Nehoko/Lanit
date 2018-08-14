@@ -1,3 +1,7 @@
+package ru.lanit.boozer.impl;
+
+import ru.lanit.boozer.api.CardGame;
+
 public class PlayingTable {
     public static void main(String[] args) {
         //Создание ботов

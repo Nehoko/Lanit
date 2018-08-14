@@ -1,3 +1,7 @@
+package ru.lanit.boozer.impl;
+
+import ru.lanit.boozer.api.Card;
+
 import java.util.HashSet;
 import java.util.LinkedList;
 

@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>700</x>
-      <y>710</y>
+      <x>1050</x>
+      <y>310</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -16,8 +16,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>890</x>
-      <y>710</y>
+      <x>850</x>
+      <y>680</y>
       <w>220</w>
       <h>180</h>
     </coordinates>
@@ -38,8 +38,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>290</y>
+      <x>790</x>
+      <y>150</y>
       <w>360</w>
       <h>130</h>
     </coordinates>
@@ -56,8 +56,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>930</x>
-      <y>510</y>
+      <x>790</x>
+      <y>420</y>
       <w>160</w>
       <h>50</h>
     </coordinates>
@@ -69,23 +69,28 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>500</y>
+      <x>360</x>
+      <y>410</y>
       <w>180</w>
-      <h>80</h>
+      <h>160</h>
     </coordinates>
     <panel_attributes>+Boozer
 --
 -cardDeck: CardDeck
 -cards: LinkedList&lt;Card&gt;
--players: ArrayList&lt;Player&gt;</panel_attributes>
+-players: ArrayList&lt;Player&gt;
+--
+-createCardDeck()
+-handOutCards()
+-grabTable()
+-startTheGame()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>370</x>
-      <y>710</y>
+      <x>330</x>
+      <y>680</y>
       <w>230</w>
       <h>160</h>
     </coordinates>
@@ -105,16 +110,18 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>370</x>
-      <y>290</y>
+      <x>330</x>
+      <y>150</y>
       <w>250</w>
-      <h>130</h>
+      <h>160</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 +CardGame
 --
 +getPlayers(): ArrayList&lt;Player&gt;
 +setPlayers(players: ArrayList&lt;Player&gt;
++getPlayer(): Player
++setPlayer(player: Player)
 +getCardDeck(): CardDeck
 +setCardDeck(cardDeck: CardDeck)
 +play()</panel_attributes>
@@ -123,75 +130,128 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>520</y>
-      <w>380</w>
+      <x>530</x>
+      <y>430</y>
+      <w>280</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m1=+1..1
 m2=+1..1
 +раздана</panel_attributes>
-    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>570</y>
+      <x>440</x>
+      <y>560</y>
       <w>80</w>
-      <h>160</h>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1=+0..1
 m2=+0..4
 играет в</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1000</x>
-      <y>410</y>
+      <x>860</x>
+      <y>270</y>
       <w>30</w>
-      <h>120</h>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>790</x>
-      <y>710</y>
-      <w>120</w>
-      <h>30</h>
+      <x>1050</x>
+      <y>330</y>
+      <w>30</w>
+      <h>370</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;350.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>410</y>
+      <x>440</x>
+      <y>300</y>
       <w>30</w>
-      <h>110</h>
+      <h>130</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1000</x>
-      <y>550</y>
+      <x>860</x>
+      <y>460</y>
       <w>60</w>
-      <h>180</h>
+      <h>240</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=+1..1
 m2=+1..*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>780</y>
+      <w>320</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=0..n
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;10.0;300.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>320</x>
+      <y>100</y>
+      <w>850</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>api
+--
+bg=green
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>320</x>
+      <y>380</y>
+      <w>850</w>
+      <h>510</h>
+    </coordinates>
+    <panel_attributes>impl
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>300</x>
+      <y>60</y>
+      <w>890</w>
+      <h>850</h>
+    </coordinates>
+    <panel_attributes>ru.lanit.boozer
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

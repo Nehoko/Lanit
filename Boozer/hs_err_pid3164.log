@@ -1126,7 +1126,7 @@ Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=
 |1019|0x00000000c1900000, 0x00000000c1900000, 0x00000000c1a00000|  0%| F|  |TS 25|AC  0|TAMS 0x00000000c1900000, 0x00000000c1900000|
 |1020|0x00000000c1a00000, 0x00000000c1a00000, 0x00000000c1b00000|  0%| F|  |TS 25|AC  0|TAMS 0x00000000c1a00000, 0x00000000c1a00000|
 
-Card table byte_map: [0x000001b678040000,0x000001b678440000] byte_map_base: 0x000001b677c31000
+ru.lanit.boozer.api.Card table byte_map: [0x000001b678040000,0x000001b678440000] byte_map_base: 0x000001b677c31000
 
 Marking Bits (Prev, Next): (CMBitMap*) 0x000001b66b417450, (CMBitMap*) 0x000001b66b417488
  Prev Bits: [0x000001b678840000, 0x000001b67a7c8000)
@@ -1146,13 +1146,13 @@ CodeHeap 'non-nmethods': size=5696Kb used=1174Kb max_used=1187Kb free=4521Kb
 Compilation events (10 events):
 Event: 0.162 Thread 0x000001b67f67a000  203       4       java.util.Random::nextInt (74 bytes)
 Event: 0.162 Thread 0x000001b67f66d000 nmethod 202 0x000001b607acee90 code [0x000001b607acf020, 0x000001b607acf1f8]
-Event: 0.162 Thread 0x000001b67f66d000  205       4       Player::addCard (10 bytes)
+Event: 0.162 Thread 0x000001b67f66d000  205       4       ru.lanit.boozer.impl.Player::addCard (10 bytes)
 Event: 0.163 Thread 0x000001b67f67a000 nmethod 203 0x000001b607acf290 code [0x000001b607acf420, 0x000001b607acf598]
 Event: 0.166 Thread 0x000001b67f66d000 nmethod 205 0x000001b607acf710 code [0x000001b607acf8a0, 0x000001b607acfd78]
 Event: 0.171 Thread 0x000001b67f67f000 nmethod 206% 0x000001b6005cfc90 code [0x000001b6005d1600, 0x000001b6005e3ee0]
-Event: 0.171 Thread 0x000001b67f67f000  207       3       Boozer::Play (943 bytes)
+Event: 0.171 Thread 0x000001b67f67f000  207       3       ru.lanit.boozer.impl.Boozer::Play (943 bytes)
 Event: 0.192 Thread 0x000001b67f67f000 nmethod 207 0x000001b6005ea110 code [0x000001b6005eba80, 0x000001b6005fe280]
-Event: 0.193 Thread 0x000001b67f67a000  208 %     4       Boozer::Play @ 588 (943 bytes)
+Event: 0.193 Thread 0x000001b67f67a000  208 %     4       ru.lanit.boozer.impl.Boozer::Play @ 588 (943 bytes)
 Event: 0.203 Thread 0x000001b67f67a000 nmethod 208% 0x000001b607acfe90 code [0x000001b607ad0080, 0x000001b607ad08b8]
 
 GC Heap History (10 events):
@@ -1300,7 +1300,7 @@ Dynamic libraries:
 VM Arguments:
 jvm_args: -javaagent:L:\Jet Brains\IntelliJ IDEA Community Edition 2018.2.1\lib\idea_rt.jar=53457:L:\Jet Brains\IntelliJ IDEA Community Edition 2018.2.1\bin -Dfile.encoding=UTF-8 
 java_command: Main
-java_class_path (initial): C:\Users\fun4l\IdeaProjects\Boozer\out\production\Boozer
+java_class_path (initial): C:\Users\fun4l\IdeaProjects\ru.lanit.boozer.impl.Boozer\out\production\ru.lanit.boozer.impl.Boozer
 Launcher Type: SUN_STANDARD
 
 Logging:

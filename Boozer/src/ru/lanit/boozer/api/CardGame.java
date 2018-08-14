@@ -1,3 +1,7 @@
+package ru.lanit.boozer.api;
+
+import ru.lanit.boozer.impl.Player;
+
 import java.util.ArrayList;
 
 public interface CardGame {
@@ -9,6 +13,10 @@ public interface CardGame {
      CardDeck getCardDeck();
 
      void setCardDeck(CardDeck cardDeck);
+
+     void setPlayer(Player player);
+
+     Player getPlayer();
 
      void play();
 }
