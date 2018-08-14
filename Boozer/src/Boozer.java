@@ -19,8 +19,7 @@ public class Boozer implements CardGame {
     public void play(){
         //Создание колоды карт
         cardDeck = new BoozerCardDeck(36);
-        cardDeck.shuffleDeck();
-        cards = new LinkedList<>(cardDeck.getCards());
+        cards = cardDeck.shuffleDeck(cardDeck.getCards());
 
         //Раздача карт на руки
         int j = 0;

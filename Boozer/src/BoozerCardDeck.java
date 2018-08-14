@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
@@ -76,14 +77,14 @@ public class BoozerCardDeck implements CardDeck{
         }
     }
     @Override
-    public void shuffleDeck(ArrayList<Card> cards){//ттталкивайся отсюда
-        ArrayList<Card> shuffeledDeck = new ArrayList<>();
+    public LinkedList<Card> shuffleDeck(ArrayList<Card> cards){//отталкивайся отсюда
+        LinkedList<Card> shuffeledDeck = new LinkedList<>();
         while(!cards.isEmpty()){
             Random random = new Random();
             int i = random.nextInt(cards.size());
             shuffeledDeck.add(cards.get(i));
             cards.remove(i);
         }
-        cards = shuffeledDeck;
+        return shuffeledDeck;
     }
 }
