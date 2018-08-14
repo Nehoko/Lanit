@@ -14,13 +14,12 @@ public class Boozer implements CardGame {
         players.add(player4);
     }
 
-    @Override
-    public void play(){
-        //Создание колоды карт
+    private void createCardDeck(){
         cardDeck = new BoozerCardDeck(36);
         cards = cardDeck.shuffleDeck(cardDeck.getCards());
+    }
 
-        //Раздача карт на руки
+    private void handOutCards(){
         int j = 0;
         while(!cards.isEmpty()){
             players.get(j).addCard(cards.getFirst());
@@ -28,13 +27,25 @@ public class Boozer implements CardGame {
             j++;
             if (j==players.size()) j = 0;
         }
+    }
+    private void grabTable(HashSet<Card> table, HashMap<Player, Integer> round, boolean matched, int min){
+        for (Map.Entry<Player, Integer> entry : round.entrySet()) {
+            if (entry.getValue() == min && !matched) {
+                entry.getKey().addTable(table);
+                table.clear();
+                System.out.println("Игрок " + entry.getKey().getName() + " забирает стол.");
+            }
+        }
+    }
 
-        //Начало игры
+    private void startTheGame(){
+        //Скидывание карт на стол
         HashSet<Card> table = new HashSet<>();
-        HashMap<Player, Integer> round = new HashMap<>();
+        HashMap<Player,Integer> round = new HashMap<>();
         boolean notBroken = true;
+
         while(notBroken) {
-            //Скидывание карт на стол
+
             int min = MAX_VALUE;
             boolean matched = false;
             for (Player player : players) {
@@ -60,14 +71,21 @@ public class Boozer implements CardGame {
                 }
             }
             //Кто скинул наименьшую карту, тот забирает стол
-            for (Map.Entry<Player, Integer> entry : round.entrySet()) {
-                if (entry.getValue() == min && !matched) {
-                    entry.getKey().addTable(table);
-                    table.clear();
-                    System.out.println("Игрок " + entry.getKey().getName() + " забирает стол.");
-                }
-            }
+            grabTable(table, round, matched, min);
         }
+    }
+
+    @Override
+    public void play(){
+        //Создание колоды карт
+        createCardDeck();
+
+        //Раздача карт на руки
+        handOutCards();
+
+        //Начало игры
+        startTheGame();
+
     }
 
     @Override
