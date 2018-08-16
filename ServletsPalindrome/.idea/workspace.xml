@@ -7,27 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af1a79cf-f4c7-4918-8ae5-b53d9b7a5774" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Palindrome/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ServletsPalindrome.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/fun4l.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServletsPalindrome.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Palindrome/.idea/libraries/Maven__com_1stleg_jnativehook_2_1_0.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Palindrome/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Palindrome/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Palindrome/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Palindrome/Palindrome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/Palindrome.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Palindrome/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Palindrome/src/main/java/KeyListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Palindrome/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Palindrome/src/main/java/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/src/main/java/ru/lanit/palindrome/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Palindrome/src/main/java/ru/lanit/palindrome/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/src/main/java/ru/lanit/palindrome/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Palindrome/target/Palindrome-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/target/Palindrome-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Palindrome/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Palindrome/target/classes/ru/lanit/palindrome/Palindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/target/classes/ru/lanit/palindrome/Palindrome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Palindrome/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Palindrome/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/palindrome/Palindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/palindrome/Palindrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/servlets/MainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/servlets/MainServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet/WEB-INF/classes/ru/lanit/palindrome/Palindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet/WEB-INF/classes/ru/lanit/palindrome/Palindrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet/WEB-INF/classes/ru/lanit/servlets/MainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet/WEB-INF/classes/ru/lanit/servlets/MainServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet/WEB-INF/serverPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet/WEB-INF/serverPage.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,8 +73,10 @@
     <session id="1923031965">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.36" value="1" />
@@ -83,21 +84,21 @@
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="947" />
-          <entry key="jsp" value="571" />
+          <entry key="java" value="1029" />
+          <entry key="jsp" value="661" />
           <entry key="xml" value="231" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="947" />
-          <entry key="JSP" value="571" />
+          <entry key="JAVA" value="1029" />
+          <entry key="JSP" value="661" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="XML" value="231" />
         </counts>
@@ -126,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="20" selection-end-column="17" />
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -134,8 +135,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+            <state relative-caret-position="228">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="94" column="58" selection-start-line="94" selection-start-column="58" selection-end-line="94" selection-end-column="58" />
+            <state relative-caret-position="119">
+              <caret line="74" column="13" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -164,8 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="476">
+              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -207,9 +208,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/ServletsPalindrome.iml" />
         <option value="$PROJECT_DIR$/src/main/java/palindrome/Palindrome.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java" />
       </list>
     </option>
   </component>
@@ -252,7 +253,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1940" />
+    <option name="width" value="1939" />
     <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -344,7 +345,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534423841723" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Palindrome" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -457,8 +458,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.Hooray" />
       <item itemvalue="Remote.MyTomcat" />
+      <item itemvalue="Tomcat Server.Hooray" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -473,12 +474,14 @@
       <updated>1534318665654</updated>
       <workItem from="1534344063951" duration="3717000" />
       <workItem from="1534406139040" duration="13227000" />
-      <workItem from="1534424525088" duration="254000" />
+      <workItem from="1534424525088" duration="1879000" />
+      <workItem from="1534426704768" duration="819000" />
+      <workItem from="1534427560115" duration="522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17198000" />
+    <option name="totallyTimeSpent" value="20164000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,7 +495,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28255033" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.58391124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -502,13 +505,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49597314" visible="true" weight="0.32867134" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49798658" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49127516" weight="0.3272727" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49395972" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32867134" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" weight="0.32867134" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50402683" side_tool="true" visible="true" weight="0.32867134" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5060403" side_tool="true" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32867134" />
       <window_info anchor="bottom" id="Application Servers" order="11" sideWeight="0.49932885" weight="0.32867134" />
@@ -537,21 +540,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java</url>
-          <line>45</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java</url>
-          <line>46</line>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -588,14 +591,14 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="20" selection-end-column="17" />
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="94" column="58" selection-start-line="94" selection-start-column="58" selection-end-line="94" selection-end-column="58" />
+        <state relative-caret-position="476">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -606,17 +609,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        <state relative-caret-position="119">
+          <caret line="74" column="13" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        <state relative-caret-position="228">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -682,6 +685,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

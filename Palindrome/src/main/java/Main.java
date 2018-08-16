@@ -9,7 +9,6 @@ public class Main {
         //Чтение с консоли
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String text = reader.readLine();
-        Palindrome palindrome = new Palindrome(text);
-        palindrome.checkPalindrome();
+        new Palindrome(text);
     }
 }

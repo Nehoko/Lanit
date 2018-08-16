@@ -2,27 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="484dc851-958d-4923-a61e-c0090adb2a9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/.idea/ServletsPalindrome.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/.idea/dictionaries/fun4l.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/ServletsPalindrome.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/src/main/java/ru/lanit/palindrome/Palindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/src/main/java/ru/lanit/servlets/MainServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/src/main/webapp/WEB-INF/serverPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServletsPalindrome/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_1stleg_jnativehook_2_1_0.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Palindrome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Palindrome.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KeyListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Palindrome-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Palindrome-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/palindrome/Palindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/palindrome/Palindrome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletsPalindrome/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletsPalindrome/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletsPalindrome/src/main/java/ru/lanit/palindrome/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletsPalindrome/src/main/java/ru/lanit/palindrome/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletsPalindrome/target/classes/ru/lanit/palindrome/Palindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletsPalindrome/target/classes/ru/lanit/palindrome/Palindrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletsPalindrome/target/ru.lanit.servlets.MainServlet.war" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletsPalindrome/target/ru.lanit.servlets.MainServlet.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletsPalindrome/target/ru.lanit.servlets.MainServlet/WEB-INF/classes/ru/lanit/palindrome/Palindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletsPalindrome/target/ru.lanit.servlets.MainServlet/WEB-INF/classes/ru/lanit/palindrome/Palindrome.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -112,9 +106,9 @@
     <session id="659118325">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -131,13 +125,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="118" />
+          <entry key="java" value="198" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="118" />
+          <entry key="JAVA" value="198" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -148,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="170">
+              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,16 +154,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#134#135#0" expanded="true" />
-                <element signature="e#161#162#0" expanded="true" />
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
-                <element signature="e#1614#1622#0" expanded="true" />
-                <element signature="e#2510#2518#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+                <element signature="e#190#191#0" expanded="true" />
+                <element signature="e#2554#2562#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -204,8 +195,8 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/KeyListener.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Palindrome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" />
       </list>
     </option>
@@ -259,8 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,7 +292,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,7 +302,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534424698763" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534426247221" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -390,6 +381,8 @@
       <option name="presentableId" value="Default" />
       <updated>1533801219455</updated>
       <workItem from="1534420420241" duration="1227000" />
+      <workItem from="1534424556266" duration="590000" />
+      <workItem from="1534425158763" duration="1090000" />
     </task>
     <task id="LOCAL-00001" summary="I finally made it, but all in Main.class">
       <created>1533827963957</created>
@@ -437,19 +430,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1227000" />
+    <option name="totallyTimeSpent" value="2907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31275168" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32214764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.32867134" />
@@ -460,8 +452,8 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32867134" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49932885" weight="0.32867134" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32867134" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -469,7 +461,8 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3295302" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.24630873" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,6 +485,33 @@
     <MESSAGE value="I finally made it, but all in Main.class" />
     <MESSAGE value="I finally made it, and Palindrome as different Class." />
     <option name="LAST_COMMIT_MESSAGE" value="I finally made it, and Palindrome as different Class." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="word.contains(&quot;Tenet&quot;)" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>word.contains(&quot;Tenet&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>word.con\</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/regex/Pattern.java">
@@ -519,16 +539,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KeyListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KeyListener.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/1stleg/jnativehook/2.1.0/jnativehook-2.1.0.jar!/org/jnativehook/keyboard/NativeKeyListener.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -545,8 +556,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="170">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -555,16 +566,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="204">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#134#135#0" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#1614#1622#0" expanded="true" />
-            <element signature="e#2510#2518#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#2554#2562#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -627,6 +635,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

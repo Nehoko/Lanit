@@ -9,6 +9,7 @@
          pageEncoding="UTF-8"
          isELIgnored="false"
 %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <html>
 <head>
@@ -20,8 +21,12 @@
         <p><input type="submit" name="check" value="Check"></p>
     </form>
     <p>Слова-палиндромы:</p>
-    ${words}
+    <c:forEach var="word" items="${words}">
+        ${word}<br>
+    </c:forEach>
     <p>Предложения-палиндромы:</p>
-    ${sentences}
+    <c:forEach var="sentence" items="${sentences}">
+        ${sentence}<br>
+    </c:forEach>
 </body>
 </html>

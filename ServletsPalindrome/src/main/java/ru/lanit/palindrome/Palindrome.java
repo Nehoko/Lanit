@@ -45,7 +45,7 @@ public class Palindrome {
     //Проверка текста на слова-палиндромы
     public LinkedList<String> wordPalindrome(){
         //Разбиение предложения на отдельные слова по пробелу
-        String[] strings = text.split("\\s\\n\\r");
+        String[] strings = text.split("[\\s\\n\\r]");
         for (int i = 0; i<strings.length; i++){
             //Отделяем слово от ненужных знаков
             String word = strings[i].replaceAll("\\p{Punct}","");
@@ -71,7 +71,7 @@ public class Palindrome {
     //Проверка текста на предложения-палиндромы
     public LinkedList<String> sentencePalindrome(){
         //Разделение предложений по точкам и пробелам после точки
-        String[] strings = text.split("\\.\\s");
+        String[] strings = text.split("(\\.\\s)|\\.");
         LinkedList<String> palindromes = new LinkedList<>();
         for (String string : strings) {
             String sentence = string.replaceAll("[\\p{Punct}\\s]", "");

@@ -4,23 +4,16 @@ import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 public class Palindrome {
-    private String text;
 
-    public String getText() {
-        return text;
+    public Palindrome (String text){
+        checkPalindrome(text);
     }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-    Palindrome(){}
-    public Palindrome(String text){
-        setText(text);
-    }
-    public void checkPalindrome() {
+    private void checkPalindrome(String text) {
         try {
             //Проверка количества символов
-            checkLenght(text);
+            if (text.length() == 1 || text.length() > 500) {
+                throw new Exception("Неверное кол-во символов: введите текст с кол-вом символов от 2 до 500!");
+            }
             //Проверка на наличие запрещённых символов
             checkSymbols(text);
 
@@ -31,12 +24,6 @@ public class Palindrome {
             sentencePalindrome(text);
         } catch (Exception e) {
             e.printStackTrace();
-        }
-    }
-
-    private void checkLenght(String text) throws Exception{
-        if (this.text.length() == 1 || this.text.length() > 500) {
-            throw new Exception("Неверное кол-во символов: введите текст с кол-вом символов от 2 до 500!");
         }
     }
     //Проверка текста на запрещённые символы
@@ -52,7 +39,7 @@ public class Palindrome {
     //Проверка текста на слова-палиндромы
     private void wordPalindrome(String text){
         //Разбиение предложения на отдельные слова по пробелу
-        String[] strings = text.split("\\s\\n\\r");
+        String[] strings = text.split("[\\s\\n\\r]");
         for (int i = 0; i<strings.length; i++){
             //Отделяем слово от ненужных знаков
             String word = strings[i].replaceAll("\\p{Punct}","");
