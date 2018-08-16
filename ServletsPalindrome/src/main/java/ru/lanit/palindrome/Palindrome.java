@@ -1,41 +1,49 @@
-import java.util.ArrayList;
+package ru.lanit.palindrome;
+
+import java.util.LinkedList;
 import java.util.regex.Pattern;
 
-class Palindrome {
+public class Palindrome {
+    private String text;
 
-    Palindrome (String text){
-        checkPalindrome(text);
+    public String getText() {
+        return text;
     }
-    private void checkPalindrome(String text) {
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public Palindrome(){}
+    public Palindrome(String text){
+        setText(text);
+    }
+    public boolean checkPalindrome() {
         try {
             //Проверка количества символов
-            if (text.length() == 1 || text.length() > 500) {
-                throw new Exception("Неверное кол-во символов: введите текст с кол-вом символов от 2 до 500!");
-            }
+            checkLenght(text);
             //Проверка на наличие запрещённых символов
             checkSymbols(text);
-
-            //Проверка слов на наличие полиндромов
-            wordPalindrome(text);
-
-            //Проверка предложений на наличие предложений-полиндромов
-            sentencePalindrome(text);
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
+            return false;
+        }
+    }
+    //Проверка количества символов
+    private void checkLenght(String text) throws Exception{
+        if (this.text.length() == 1 || this.text.length() > 500) {
+            throw new Exception("Неверное кол-во символов: введите текст с кол-вом символов от 2 до 500!");
         }
     }
     //Проверка текста на запрещённые символы
-    private void checkSymbols(String text){
-        try{
+    private void checkSymbols(String text)throws Exception{
             if(Pattern.matches("[+\\-=%/`~^]",text)){
                 throw new Exception("Введен один или несколько запрещённых символов: ^ + = - * % / `");
             }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
     }
     //Проверка текста на слова-палиндромы
-    private void wordPalindrome(String text){
+    public LinkedList<String> wordPalindrome(){
         //Разбиение предложения на отдельные слова по пробелу
         String[] strings = text.split("\\s\\n\\r");
         for (int i = 0; i<strings.length; i++){
@@ -43,7 +51,7 @@ class Palindrome {
             String word = strings[i].replaceAll("\\p{Punct}","");
             strings[i] = word;
         }
-        ArrayList<String> palindromes = new ArrayList<>();
+        LinkedList<String> palindromes = new LinkedList<>();
         for (String string : strings) {
 
             //Замена ЗАГЛАВНЫХ букв прописными
@@ -57,18 +65,14 @@ class Palindrome {
                 palindromes.add(string);
             }
         }
-        if (palindromes.size()>0)
-            System.out.println("Слова палиндромы:");
-        for (String palindrome : palindromes) {
-            System.out.println(palindrome);
-        }
+        return palindromes;
     }
 
     //Проверка текста на предложения-палиндромы
-    private void sentencePalindrome(String text){
+    public LinkedList<String> sentencePalindrome(){
         //Разделение предложений по точкам и пробелам после точки
         String[] strings = text.split("\\.\\s");
-        ArrayList<String> palindromes = new ArrayList<>();
+        LinkedList<String> palindromes = new LinkedList<>();
         for (String string : strings) {
             String sentence = string.replaceAll("[\\p{Punct}\\s]", "");
 
@@ -83,10 +87,13 @@ class Palindrome {
                 palindromes.add(string);
             }
         }
-        if (palindromes.size()>0)
-            System.out.println("Предложения палиндромы:");
-        for (String palindrome : palindromes){
-            System.out.println(palindrome);
+        return palindromes;
+    }
+    public String parseForHTML(LinkedList<String> arrayList){
+        StringBuilder result = new StringBuilder();
+        while(!arrayList.isEmpty()){
+            result.append(arrayList.getFirst()).append("\n");
         }
+        return result.toString();
     }
 }
