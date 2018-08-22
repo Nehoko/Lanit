@@ -14,10 +14,13 @@ public class Palindrome {
         this.text = text;
     }
 
-    public Palindrome(){}
-    public Palindrome(String text){
+    public Palindrome() {
+    }
+
+    public Palindrome(String text) {
         setText(text);
     }
+
     public boolean checkPalindrome() {
         try {
             //Проверка количества символов
@@ -30,25 +33,28 @@ public class Palindrome {
             return false;
         }
     }
+
     //Проверка количества символов
-    private void checkLenght(String text) throws Exception{
+    private void checkLenght(String text) throws Exception {
         if (this.text.length() == 1 || this.text.length() > 500) {
             throw new Exception("Неверное кол-во символов: введите текст с кол-вом символов от 2 до 500!");
         }
     }
+
     //Проверка текста на запрещённые символы
-    private void checkSymbols(String text)throws Exception{
-            if(Pattern.matches("[+\\-=%/`~^]",text)){
-                throw new Exception("Введен один или несколько запрещённых символов: ^ + = - * % / `");
-            }
+    private void checkSymbols(String text) throws Exception {
+        if (Pattern.matches("[+\\-=%/`~^]", text)) {
+            throw new Exception("Введен один или несколько запрещённых символов: ^ + = - * % / `");
+        }
     }
+
     //Проверка текста на слова-палиндромы
-    public LinkedList<String> wordPalindrome(){
+    public LinkedList<String> wordPalindrome() {
         //Разбиение предложения на отдельные слова по пробелу
         String[] strings = text.split("[\\s\\n\\r]");
-        for (int i = 0; i<strings.length; i++){
+        for (int i = 0; i < strings.length; i++) {
             //Отделяем слово от ненужных знаков
-            String word = strings[i].replaceAll("\\p{Punct}","");
+            String word = strings[i].replaceAll("\\p{Punct}", "");
             strings[i] = word;
         }
         LinkedList<String> palindromes = new LinkedList<>();
@@ -69,7 +75,7 @@ public class Palindrome {
     }
 
     //Проверка текста на предложения-палиндромы
-    public LinkedList<String> sentencePalindrome(){
+    public LinkedList<String> sentencePalindrome() {
         //Разделение предложений по точкам и пробелам после точки
         String[] strings = text.split("(\\.\\s)|\\.");
         LinkedList<String> palindromes = new LinkedList<>();
@@ -89,9 +95,10 @@ public class Palindrome {
         }
         return palindromes;
     }
-    public String parseForHTML(LinkedList<String> arrayList){
+
+    public String parseForHTML(LinkedList<String> arrayList) {
         StringBuilder result = new StringBuilder();
-        while(!arrayList.isEmpty()){
+        while (!arrayList.isEmpty()) {
             result.append(arrayList.getFirst()).append("\n");
         }
         return result.toString();

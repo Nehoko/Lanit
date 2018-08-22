@@ -15,18 +15,19 @@
 <head>
 </head>
 <body>
-    <form action="${pageContext.request.contextPath}/" method="post" accept-charset="UTF-8" >
-        <p><h3>${message}</h3></p>
-        <p><input type="text" name="text" size ="40" pattern="^[^+\-=%/`~^]{2,500}$"></p>
-        <p><input type="submit" name="check" value="Check"></p>
-    </form>
-    <p>Слова-палиндромы:</p>
-    <c:forEach var="word" items="${words}">
-        ${word}<br>
-    </c:forEach>
-    <p>Предложения-палиндромы:</p>
-    <c:forEach var="sentence" items="${sentences}">
-        ${sentence}<br>
-    </c:forEach>
+<form action="${pageContext.request.contextPath}/" method="post" accept-charset="UTF-8">
+    <p>
+    <h3>${message}</h3></p>
+    <p><input type="text" name="text" size="40" pattern="^[^+\-=%/`~^]{2,500}$"></p>
+    <p><input type="submit" name="check" value="Check"></p>
+</form>
+<p>Слова-палиндромы:</p>
+<c:forEach var="word" items="${words}">
+    ${word}<br>
+</c:forEach>
+<p>Предложения-палиндромы:</p>
+<c:forEach var="sentence" items="${sentences}">
+    ${sentence}<br>
+</c:forEach>
 </body>
 </html>

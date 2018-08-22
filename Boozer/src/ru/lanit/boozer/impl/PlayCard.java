@@ -7,12 +7,12 @@ public class PlayCard extends Card {
     private String name;
     private String suit;
 
-    public PlayCard(int value, String name){
+    public PlayCard(int value, String name) {
         setValue(value);
         setName(name);
     }
 
-    public PlayCard(String name){
+    public PlayCard(String name) {
         setName(name);
         String[] strings = name.split("\\s");
         setSuit(strings[1]);
@@ -22,7 +22,7 @@ public class PlayCard extends Card {
         return value;
     }
 
-    public void setValue(int value){
+    public void setValue(int value) {
         this.value = value;
     }
 

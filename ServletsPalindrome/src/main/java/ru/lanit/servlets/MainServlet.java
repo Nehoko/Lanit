@@ -48,7 +48,7 @@ public class MainServlet extends HttpServlet {
         //String sentences = palindrome.parseForHTML(sentencesMassive);
 
         request.setAttribute("message", message); // This will be available as ${message}
-        request.setAttribute("yourText",yourText);
+        request.setAttribute("yourText", yourText);
         request.setAttribute("words", wordsMassive);
         request.setAttribute("sentences", sentencesMassive);
         request.getRequestDispatcher("/WEB-INF/serverPage.jsp").forward(request, response);
