@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF8"/>
+</head>
+<p>
+    <div>
+        <form action="/search" method="post">
+            <input type="text" name="search" placeholder="Поиск по афише"/>
+            <input type="submit" value="Найти"/>
+        </form>
+    </div>
+
+
+        <table border="1">
+            <caption>Афиша в нашем театре</caption>
+            <tr>
+                <th>№</th>
+                <th>Название</th>
+                <th>Количество мест</th>
+            </tr>
+            {{#afisha}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name}}</td>
+                    <td>{{seats}}</td>
+                </tr>
+            {{/afisha}}
+        </table>
+
+</body>
+</html>

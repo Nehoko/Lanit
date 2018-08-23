@@ -4,7 +4,7 @@
 
 <div class="header-container">
 
-    <div class="site-name">Book Store</div>
+    <div class="site-name">Spring Afisha</div>
 
     <div class="header-bar">
         Hello, UserName

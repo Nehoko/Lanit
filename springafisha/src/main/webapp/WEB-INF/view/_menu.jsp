@@ -6,6 +6,8 @@
     <a href="${pageContext.request.contextPath}/">Home</a>
     |
     <a href="${pageContext.request.contextPath}/adminPanel">Admin Panel</a>
+    |
+    <a href="${pageContext.request.contextPath}/userPanel">User Panel</a>
 
 
 </div>

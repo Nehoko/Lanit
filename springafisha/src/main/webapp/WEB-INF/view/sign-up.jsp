@@ -11,21 +11,22 @@
 --%>
 <html>
 <head>
-    <title>Вход</title>
+    <title>Регистрация</title>
     <jsp:include page="_header.jsp"/>
     <jsp:include page="_menu.jsp"/>
 </head>
 <body>
 
 
-<form action="${pageContext.request.contextPath}/" method="post" accept-charset="UTF-8">
+<form action="${pageContext.request.contextPath}/save" method="post" accept-charset="UTF-8">
     <p>
-    <h3>${message}</h3></p>
-    <p>Введите логин, используя английскую раскладку</p>
-    <p><input type="text" name="login" size="40" pattern="[a-zA-Z]{2,500}$"></p>
-    <p>Введите пароль, используя цифры и буквы английского языка</p>
-    <p><input type="text" name="password" size="40" pattern="[a-zA-Z0-9]{2,500}$"></p>
+    <p>Логин: <input type="text" name="login" size="40" pattern="[a-zA-Z]{6,500}$"></p>
+    <p>Пароль: <input type="text" name="password" size="40" pattern="[a-zA-Z0-9]{6,500}$"></p>
     <p><input type="submit" name="sign-up" value="Зарегистрироваться"></p>
+    <p>
+        <div>Логин должен быть длинной не менее 6 символов и содержать в себе англоязычные буквы.</div>
+        <div>Пароль должен состоять из англоязычных букв и цифр и длинной не менее 6 символов</div>
+    </p>
 </form>
 </body>
 <footer>

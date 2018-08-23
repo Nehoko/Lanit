@@ -5,7 +5,7 @@
   Time: 17:02
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"
          isELIgnored="false"
 %>
@@ -15,7 +15,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <html>
 <head>
-    <title>Регистрация</title>
+    <title>Вход</title>
     <jsp:include page="_header.jsp"/>
     <jsp:include page="_menu.jsp"/>
 </head>
@@ -23,12 +23,14 @@
 
 <form action="${pageContext.request.contextPath}/" method="post" accept-charset="UTF-8">
     <p>
-    <h3>${message}</h3></p>
-    <p>Введите логин, используя английскую раскладку</p>
-    <p><input type="text" name="login" size="40" pattern="[a-zA-Z]{2,500}$"></p>
-    <p>Введите пароль, используя цифры и буквы английского языка</p>
-    <p><input type="text" name="password" size="40" pattern="[a-zA-Z0-9]{2,500}$"></p>
+    <p>Логин: <label>
+        <input type="text" name="login" size="40" pattern="[a-zA-Z]{6,500}$">
+    </label></p>
+    <p>Пароль: <label>
+        <input type="text" name="password" size="40" pattern="[a-zA-Z0-9]{6,500}$">
+    </label></p>
     <p><input type="submit" name="sign-in" value="Войти"></p>
+    <p>
 </form>
 </body>
 <footer>
