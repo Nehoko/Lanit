@@ -1,3 +1,5 @@
+<#import "login.ftl" as l>
+<#macro menu>
 <div class="menu-container">
 
     <a href="/">Главная страница</a>
@@ -11,12 +13,10 @@
     <p>
 
     <div>
-        Привет, {{#username}}{{username}}{{/username}}
-        <form action="/logout" method="post">
-            {{>_token}}
-            <input type="submit" value="Выйти"/>
-        </form>
+        Привет, username
+        <@l.logout/>
     </div>
 
 
 </div>
+</#macro>

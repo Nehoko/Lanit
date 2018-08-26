@@ -2,6 +2,7 @@ package ru.lanit.springboot.afisha.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.lanit.springboot.afisha.entities.User;
@@ -9,7 +10,6 @@ import ru.lanit.springboot.afisha.enums.Role;
 import ru.lanit.springboot.afisha.repos.UserRepository;
 
 import java.util.Collections;
-import java.util.Map;
 
 @Controller
 public class RegistrationController {
@@ -22,11 +22,11 @@ public class RegistrationController {
     }
 
     @PostMapping("/sign-up")
-    public String addUser(User user, Map<String, Object> model){
+    public String addUser(User user, Model model){
         User userFromDB = userRepository.findByUsername(user.getUsername());
 
         if (userFromDB != null){
-            model.put("message", "User already exists!");
+            model.addAttribute("message", "User already exists!");
             return "sign-up";
         }
         user.setActive(true);

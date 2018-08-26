@@ -1,24 +1,15 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Панель Администрации</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF8"/>
-    {{>_header}}
-</head>
-<body>
+<#import "parts/common.ftl" as c>
+<#import "parts/token.ftl" as t>
+<@c.page>
 <p>
 <div>
     <form method="post" action="/">
         <input type="text" name="name" placeholder="Название спектакля"/>
         <input type="number" name="seats" placeholder="Количество мест"/>
-        {{>_token}}
+        <@t.token/>
         <button type="submit">Добавить</button>
     </form>
 </div>
 <div>
 </div>
-</body>
-<footer>
-    {{>_footer}}
-</footer>
-</html>
+</@c.page>
