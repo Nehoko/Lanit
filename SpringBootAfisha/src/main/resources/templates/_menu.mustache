@@ -1,0 +1,22 @@
+<div class="menu-container">
+
+    <a href="/">Главная страница</a>
+    |
+    <a href="/adminPanel">Панель администрации</a>
+    |
+    <a href="/userPanel">Личный кабинет</a>
+    |
+    <a href="/sign-up">Регистрация</a>
+
+    <p>
+
+    <div>
+        Привет, {{#username}}{{username}}{{/username}}
+        <form action="/logout" method="post">
+            {{>_token}}
+            <input type="submit" value="Выйти"/>
+        </form>
+    </div>
+
+
+</div>
