@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Servlets_palindrome" />
         <module name="servlets_palindrome" />
+        <module name="servletsPalindrome" />
         <module name="ServletsPalindrome" />
       </profile>
     </annotationProcessing>

@@ -17,11 +17,11 @@ public class Player {
         return this.name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public Integer getHand(){
+    public Integer getHand() {
         return hand.size();
     }
 
@@ -29,16 +29,17 @@ public class Player {
         hand.add(card);
     }
 
-    public Card dropCard(){
-        try{
+    public Card dropCard() {
+        try {
             Card card = hand.getFirst();
             hand.removeFirst();
             return card;
-        }catch (Exception e){
+        } catch (Exception e) {
             return null;
         }
     }
-    public void addTable(HashSet<Card> table){
+
+    public void addTable(HashSet<Card> table) {
         hand.addAll(table);
     }
 }

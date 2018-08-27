@@ -40,6 +40,14 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/ant/ant-jakarta-oro -->
+        <dependency>
+            <groupId>ant</groupId>
+            <artifactId>ant-jakarta-oro</artifactId>
+            <version>1.6</version>
+        </dependency>
+
     </dependencies>
 
     <build>

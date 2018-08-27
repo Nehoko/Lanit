@@ -5,7 +5,11 @@
       <option name="myValues">
         <value>
           <list size="1">
+<<<<<<< HEAD
             <item index="0" class="java.lang.String" itemvalue="|]{2,500}$" />
+=======
+            <item index="0" class="java.lang.String" itemvalue="submit" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
           </list>
         </value>
       </option>

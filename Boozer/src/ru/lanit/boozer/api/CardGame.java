@@ -6,17 +6,17 @@ import java.util.ArrayList;
 
 public interface CardGame {
 
-     ArrayList<Player> getPlayers();
+    ArrayList<Player> getPlayers();
 
-     void setPlayers(ArrayList<Player> players);
+    void setPlayers(ArrayList<Player> players);
 
-     CardDeck getCardDeck();
+    CardDeck getCardDeck();
 
-     void setCardDeck(CardDeck cardDeck);
+    void setCardDeck(CardDeck cardDeck);
 
-     void setPlayer(Player player);
+    void setPlayer(Player player);
 
-     Player getPlayer();
+    Player getPlayer();
 
-     void play();
+    void play();
 }

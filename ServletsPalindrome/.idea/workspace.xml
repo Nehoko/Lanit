@@ -2,19 +2,119 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ServletsPalindrome:war" />
+      <artifact name="servletsPalindrome:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="af1a79cf-f4c7-4918-8ae5-b53d9b7a5774" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+=======
+    <list default="true" id="af1a79cf-f4c7-4918-8ae5-b53d9b7a5774" name="Default Changelist" comment="ServletsPalindome: main quest complete!">
+      <change afterPath="$PROJECT_DIR$/../Lanit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/artifacts/bookStore_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/artifacts/bookStore_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__com_mchange_c3p0_0_9_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__commons_digester_commons_digester_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__commons_validator_commons_validator_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__javax_el_el_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__javax_enterprise_cdi_api_1_1_PFD.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_hibernate_hibernate_c3p0_5_2_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_2_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_hsqldb_hsqldb_2_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_jboss_spec_javax_interceptor_jboss_interceptors_api_1_1_spec_1_0_0_Beta1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_security_spring_security_acl_4_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_4_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_spring_aop_4_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_spring_beans_4_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_spring_context_4_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_spring_core_4_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_spring_expression_4_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_spring_orm_4_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_spring_tx_4_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_spring_web_4_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/bookStore.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/src/main/java/ru/lanit/afisha/AfishaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/src/main/java/ru/lanit/afisha/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/src/main/resources/templates/greeting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/src/main/webapp/WEB-INF/appServlet-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineAfisha/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/.idea/dictionaries/User.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/java/ru/lanit/springafisha/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/spring-mvc-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/spring/root.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/view/_footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/view/_header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/view/_menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/view/adminPanel.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/view/performance.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/view/sign-in.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/view/sign-up.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/view/ticket.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/view/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testspring/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/api/CardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/api/CardDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/api/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/api/CardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/impl/Boozer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/impl/Boozer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/impl/BoozerCardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/impl/BoozerCardDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/impl/PlayCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/impl/PlayCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/impl/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Boozer/src/ru/lanit/boozer/impl/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Palindrome/src/main/java/ru/lanit/palindrome/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Palindrome/src/main/java/ru/lanit/palindrome/Palindrome.java" afterDir="false" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servletsPalindrome/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servletsPalindrome/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/palindrome/Palindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/palindrome/Palindrome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet/WEB-INF/classes/ru/lanit/palindrome/Palindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet/WEB-INF/classes/ru/lanit/palindrome/Palindrome.class" afterDir="false" />
+=======
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
       <change beforePath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet/WEB-INF/serverPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ru.lanit.servlets.MainServlet/WEB-INF/serverPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapptest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapptest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnativehook" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -110,10 +210,52 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1901633702">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="14" />
+          <entry key="jsp" value="26" />
+          <entry key="txt" value="42" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="14" />
+          <entry key="JSP" value="26" />
+          <entry key="PLAIN_TEXT" value="42" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -127,6 +269,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="281">
               <caret line="52" selection-start-line="52" selection-end-line="52" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,8 +285,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="102">
               <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+=======
+            <state relative-caret-position="646">
+              <caret line="45" column="41" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -146,8 +298,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="19" column="108" selection-start-line="19" selection-start-column="108" selection-end-line="19" selection-end-column="108" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
             </state>
           </provider>
         </entry>
@@ -182,15 +352,20 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/servltes/MainServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/web.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/out.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/servlets/Out.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/servlets/In.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/ServletsPalindrome.iml" />
         <option value="$PROJECT_DIR$/src/main/java/palindrome/Palindrome.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp" />
       </list>
     </option>
@@ -231,11 +406,18 @@
       <select />
     </treeState>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
     <option name="height" value="1060" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1167" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -245,14 +427,92 @@
       <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
+<<<<<<< HEAD
     <panes />
+=======
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ServletsPalindrome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletsPalindrome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServletsPalindrome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletsPalindrome" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServletsPalindrome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletsPalindrome" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServletsPalindrome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletsPalindrome" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServletsPalindrome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletsPalindrome" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lanit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServletsPalindrome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletsPalindrome" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lanit" type="462c0819:PsiDirectoryNode" />
+              <item name="palindrome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServletsPalindrome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletsPalindrome" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lanit" type="462c0819:PsiDirectoryNode" />
+              <item name="servlets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServletsPalindrome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletsPalindrome" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServletsPalindrome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletsPalindrome" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534423841723" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Palindrome" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534508726412" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testspring" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -296,7 +556,7 @@
     <configuration name="Hooray" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.10" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="ServletsPalindrome:war">
+        <artifact name="servletsPalindrome:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -360,7 +620,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="ServletsPalindrome:war" />
+          <artifact name="servletsPalindrome:war exploded" />
         </option>
       </method>
     </configuration>
@@ -383,6 +643,7 @@
       <workItem from="1534406139040" duration="13227000" />
       <workItem from="1534424525088" duration="1879000" />
       <workItem from="1534426704768" duration="819000" />
+<<<<<<< HEAD
       <workItem from="1534427560115" duration="3004000" />
       <workItem from="1534433526330" duration="2016000" />
     </task>
@@ -393,11 +654,36 @@
       <option name="project" value="LOCAL" />
       <updated>1534428310014</updated>
     </task>
+=======
+      <workItem from="1534427560115" duration="522000" />
+      <workItem from="1534503983464" duration="1668000" />
+      <workItem from="1534505826193" duration="3372000" />
+      <workItem from="1534747095691" duration="76000" />
+      <workItem from="1534747192364" duration="125000" />
+      <workItem from="1534776860259" duration="478000" />
+      <workItem from="1534777393637" duration="33000" />
+      <workItem from="1534780815948" duration="1019000" />
+      <workItem from="1534848068891" duration="879000" />
+      <workItem from="1534860170531" duration="1334000" />
+      <workItem from="1534865003521" duration="532000" />
+    </task>
+    <task id="LOCAL-00001" summary="ServletsPalindome: main quest complete!">
+      <created>1534508587391</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534508587391</updated>
+    </task>
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="24662000" />
+=======
+    <option name="totallyTimeSpent" value="29680000" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -409,9 +695,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1167" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.58391124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29102844" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -421,15 +707,26 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4899329" weight="0.32587412" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49395972" weight="0.4" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49015433" weight="0.36877078" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4936034" weight="0.3994112" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32867134" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" weight="0.32867134" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5100671" side_tool="true" visible="true" weight="0.32587412" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49932885" weight="0.32867134" />
+=======
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5002661" side_tool="true" weight="0.68677497" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.4997339" visible="true" weight="0.32779622" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
       <window_info anchor="bottom" id="Application Servers" order="11" sideWeight="0.49932885" weight="0.32867134" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
@@ -441,7 +738,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3295302" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32942432" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
@@ -452,6 +749,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="Created: Servlet for Palindrome, .jsp file etc.&#10;Next step: add KeyListener." />
     <option name="LAST_COMMIT_MESSAGE" value="Created: Servlet for Palindrome, .jsp file etc.&#10;Next step: add KeyListener." />
   </component>
@@ -478,6 +776,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+=======
+    <MESSAGE value="ServletsPalindome: main quest complete!" />
+    <option name="LAST_COMMIT_MESSAGE" value="ServletsPalindome: main quest complete!" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -501,6 +803,7 @@
         <state relative-caret-position="-554" />
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -509,26 +812,57 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServletsPalindrome.iml">
+=======
+    <entry file="file://$PROJECT_DIR$/ServletsPalindrome.iml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="748">
+          <caret line="44" selection-start-line="44" selection-end-line="48" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/servlets/MainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/palindrome/Palindrome.java">
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="102">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+=======
+        <state relative-caret-position="289">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/serverPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="281">
           <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="289">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+>>>>>>> 70875e8efba4314b18afd68f04b3703dcd4c1e1c
         </state>
       </provider>
     </entry>
@@ -552,7 +886,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>ServletsPalindrome:war</last-edited>
+          <last-edited>servletsPalindrome:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -600,12 +934,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ServletsPalindrome</last-edited>
+          <last-edited>servletsPalindrome</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

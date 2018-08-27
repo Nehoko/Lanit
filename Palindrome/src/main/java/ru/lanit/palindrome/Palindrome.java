@@ -5,9 +5,10 @@ import java.util.regex.Pattern;
 
 public class Palindrome {
 
-    public Palindrome (String text){
+    public Palindrome(String text) {
         checkPalindrome(text);
     }
+
     private void checkPalindrome(String text) {
         try {
             //Проверка количества символов
@@ -26,23 +27,25 @@ public class Palindrome {
             e.printStackTrace();
         }
     }
+
     //Проверка текста на запрещённые символы
-    private void checkSymbols(String text){
-        try{
-            if(Pattern.matches("[+\\-=%/`~^]",text)){
+    private void checkSymbols(String text) {
+        try {
+            if (Pattern.matches("[+\\-=%/`~^]", text)) {
                 throw new Exception("Введен один или несколько запрещённых символов: ^ + = - * % / `");
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     //Проверка текста на слова-палиндромы
-    private void wordPalindrome(String text){
+    private void wordPalindrome(String text) {
         //Разбиение предложения на отдельные слова по пробелу
         String[] strings = text.split("[\\s\\n\\r]");
-        for (int i = 0; i<strings.length; i++){
+        for (int i = 0; i < strings.length; i++) {
             //Отделяем слово от ненужных знаков
-            String word = strings[i].replaceAll("\\p{Punct}","");
+            String word = strings[i].replaceAll("\\p{Punct}", "");
             strings[i] = word;
         }
         ArrayList<String> palindromes = new ArrayList<String>();
@@ -59,7 +62,7 @@ public class Palindrome {
                 palindromes.add(string);
             }
         }
-        if (palindromes.size()>0)
+        if (palindromes.size() > 0)
             System.out.println("Слова палиндромы:");
         for (String palindrome : palindromes) {
             System.out.println(palindrome);
@@ -67,7 +70,7 @@ public class Palindrome {
     }
 
     //Проверка текста на предложения-палиндромы
-    private void sentencePalindrome(String text){
+    private void sentencePalindrome(String text) {
         //Разделение предложений по точкам и пробелам после точки
         String[] strings = text.split("\\.\\s");
         ArrayList<String> palindromes = new ArrayList<String>();
@@ -85,9 +88,9 @@ public class Palindrome {
                 palindromes.add(string);
             }
         }
-        if (palindromes.size()>0)
+        if (palindromes.size() > 0)
             System.out.println("Предложения палиндромы:");
-        for (String palindrome : palindromes){
+        for (String palindrome : palindromes) {
             System.out.println(palindrome);
         }
     }

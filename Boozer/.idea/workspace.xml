@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b368710-b0e5-49c1-9f82-45002a06eb9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid3164.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid3164.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/new.uxf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Boozer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/lanit/boozer/impl/Boozer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoozerCardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/lanit/boozer/impl/BoozerCardDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/lanit/boozer/api/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/lanit/boozer/api/CardDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/lanit/boozer/api/CardGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/lanit/boozer/impl/PlayCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/lanit/boozer/impl/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayingTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/lanit/boozer/impl/PlayingTable.java" afterDir="false" />
-    </list>
+    <list default="true" id="7b368710-b0e5-49c1-9f82-45002a06eb9a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +81,7 @@
     <session id="-1452171608">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -149,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/lanit/boozer/impl/PlayingTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -181,11 +169,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/lanit/boozer/impl/Boozer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="444">
+              <caret line="92" column="23" lean-forward="true" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3613#3614#0" expanded="true" />
@@ -340,7 +328,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534261301496" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534261306060" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -426,7 +414,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09488273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -437,7 +424,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32779622" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36987817" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3689892" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -534,13 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/lanit/boozer/impl/PlayCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/lanit/boozer/impl/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -553,10 +533,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/lanit/boozer/impl/PlayingTable.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/lanit/boozer/impl/Boozer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="444">
+          <caret line="92" column="23" lean-forward="true" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3613#3614#0" expanded="true" />
+            <element signature="e#3712#3713#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -570,15 +555,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/lanit/boozer/impl/Boozer.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/lanit/boozer/impl/PlayCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3613#3614#0" expanded="true" />
-            <element signature="e#3712#3713#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/lanit/boozer/impl/PlayingTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>

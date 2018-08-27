@@ -13,28 +13,29 @@ public class Boozer implements CardGame {
     private LinkedList<Card> cards;
     private ArrayList<Player> players = new ArrayList<>();
 
-    public Boozer(Player player1, Player player2, Player player3, Player player4){
+    public Boozer(Player player1, Player player2, Player player3, Player player4) {
         players.add(player1);
         players.add(player2);
         players.add(player3);
         players.add(player4);
     }
 
-    private void createCardDeck(){
+    private void createCardDeck() {
         cardDeck = new BoozerCardDeck(36);
         cards = cardDeck.shuffleDeck(cardDeck.getCards());
     }
 
-    private void handOutCards(){
+    private void handOutCards() {
         int j = 0;
-        while(!cards.isEmpty()){
+        while (!cards.isEmpty()) {
             players.get(j).addCard(cards.getFirst());
             cards.removeFirst();
             j++;
-            if (j==players.size()) j = 0;
+            if (j == players.size()) j = 0;
         }
     }
-    private void grabTable(HashSet<Card> table, HashMap<Player, Integer> round, boolean matched, int min){
+
+    private void grabTable(HashSet<Card> table, HashMap<Player, Integer> round, boolean matched, int min) {
         for (Map.Entry<Player, Integer> entry : round.entrySet()) {
             if (entry.getValue() == min && !matched) {
                 entry.getKey().addTable(table);
@@ -44,33 +45,33 @@ public class Boozer implements CardGame {
         }
     }
 
-    private void startTheGame(){
+    private void startTheGame() {
         //Скидывание карт на стол
         HashSet<Card> table = new HashSet<>();
-        HashMap<Player,Integer> round = new HashMap<>();
+        HashMap<Player, Integer> round = new HashMap<>();
         boolean notBroken = true;
 
-        while(notBroken) {
+        while (notBroken) {
 
             int min = MAX_VALUE;
             boolean matched = false;
             for (Player player : players) {
-                if (player.getHand()>=36) {//Условие прерывания
+                if (player.getHand() >= 36) {//Условие прерывания
                     notBroken = false;
                     System.out.println("Игрок " + player.getName() + " проиграл!");
                     break;
                 }
                 PlayCard card = (PlayCard) player.dropCard();
-                if(card == null){
+                if (card == null) {
                     System.out.println("Игрок " + player.getName() + " вышел из игры победителем!");
-                }else {
+                } else {
                     System.out.println("Игрок " + player.getName() + ": " + card.getName());
                     int number = card.getValue();
                     round.put(player, number);
                     table.add(card);
-                    if (number == min){
+                    if (number == min) {
                         matched = true;
-                    }else if (number < min){
+                    } else if (number < min) {
                         min = number;
                         matched = false;
                     }
@@ -82,7 +83,7 @@ public class Boozer implements CardGame {
     }
 
     @Override
-    public void play(){
+    public void play() {
         //Создание колоды карт
         createCardDeck();
 
