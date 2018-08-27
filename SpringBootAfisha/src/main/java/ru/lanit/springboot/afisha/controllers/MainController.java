@@ -1,6 +1,7 @@
 package ru.lanit.springboot.afisha.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,10 +22,7 @@ public class MainController {
 
     @GetMapping("/")
     public String showIndex(@RequestParam(required = false, defaultValue = "") String search, Model model) {
-        Iterable<Afisha> performances = afishaRepository.findAll();
-        model.addAttribute("afisha", performances);
-
-        //model.addAttribute("users",userRepository.findAll());
+        Iterable<Afisha> performances;
 
         if (search != null && !search.isEmpty())
             performances = afishaRepository.findByName(search);
@@ -37,18 +35,13 @@ public class MainController {
     }
 
     @GetMapping("/index")
-    public String showIndexTwo(Model model) {
+    public String showIndexTwo() {
         return "redirect: /";
     }
 
-    @GetMapping("/adminPanel")
-    public String showAdminPanel(Model model) {
-        Iterable<Afisha> performances = afishaRepository.findAll();
-        model.addAttribute("afisha", performances);
-        return "adminPanel";
-    }
 
     @GetMapping("/userPanel")
+    @PreAuthorize("hasAuthority('USER')")
     public String showUserPanel(Model model) {
         return "userPanel";
     }

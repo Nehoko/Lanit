@@ -13,7 +13,12 @@
     <p>
 
     <div>
-        Привет, username
+        Привет,
+    <#if username??>
+        ${username!}
+    <#else>
+    Аноним
+    </#if>
         <@l.logout/>
     </div>
 

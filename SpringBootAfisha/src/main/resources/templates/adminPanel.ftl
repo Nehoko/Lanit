@@ -1,15 +1,10 @@
 <#import "parts/common.ftl" as c>
-<#import "parts/token.ftl" as t>
+<#import "parts/crudAfisha.ftl" as crud>
+<#import "afishaList.ftl" as al>
 <@c.page>
 <p>
-<div>
-    <form method="post" action="/">
-        <input type="text" name="name" placeholder="Название спектакля"/>
-        <input type="number" name="seats" placeholder="Количество мест"/>
-        <@t.token/>
-        <button type="submit">Добавить</button>
-    </form>
-</div>
-<div>
-</div>
+    <@crud.crudAfisha/>
+    <@al.afisha "ADMIN"/>
+<p>
+<a href="/user">Список пользователей</a>
 </@c.page>

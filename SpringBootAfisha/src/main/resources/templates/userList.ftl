@@ -1,24 +1,21 @@
-<header>
-    {{>_header}}
-</header>
-<body>
+<#import "parts/common.ftl" as c>
+<@c.page>
     <table border="1">
-        <caption>Пользователи афиши</caption>
+        <thead>
         <tr>
-            <th>id</th>
             <th>username</th>
             <th>role</th>
+            <th></th>
         </tr>
-        {{#users}}
-            <tr>
-                <td>{{id}}</td>
-                <td>{{username}}</td>
-                <td>{{roles}}</td>
-                <td><a href="/edit">edit</a></td>
-            </tr>
-        {{/users}}
+        </thead>
+        <tbody>
+        <#list users! as user>
+        <tr>
+            <td>${user.username}</td>
+            <td><#list user.roles as role>${role}<#sep>, </#list></td>
+            <td><a href="/user/${user.id}">edit</a></td>
+        </tr>
+        </#list>
+        </tbody>
     </table>
-</body>
-<footer>
-    {{>_footer}}
-</footer>
+</@c.page>

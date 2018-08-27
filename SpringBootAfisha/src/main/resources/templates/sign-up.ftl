@@ -2,6 +2,6 @@
 <#import "parts/login.ftl" as l>
 <@c.page>
 Регистрация
-${message}
+    ${message!}
 <@l.login "/sign-up"/>
 </@c.page>
