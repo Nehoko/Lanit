@@ -41,6 +41,7 @@ public class Palindrome {
             if(Pattern.matches("[+\\-=%/`~^]",text)){
                 throw new Exception("Введен один или несколько запрещённых символов: ^ + = - * % / `");
             }
+            //Pattern.matches("[A-Za-zА-Яа-яЁё0-9\\s.,!?:;(){}@#$&_\"|]{2,500}",text);
     }
     //Проверка текста на слова-палиндромы
     public LinkedList<String> wordPalindrome(){
