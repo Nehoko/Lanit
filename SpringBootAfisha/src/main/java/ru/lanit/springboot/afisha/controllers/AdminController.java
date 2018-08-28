@@ -29,24 +29,23 @@ public class AdminController {
     AfishaRepository afishaRepository;
 
     @GetMapping("/adminPanel")
-    @PreAuthorize("hasAuthority('ADMIN')")
     public String showAdminPanel(Model model) {
         Iterable<Afisha> performances = afishaRepository.findAll();
         model.addAttribute("afisha", performances);
-        return "adminPanel";
+        return "admin/adminPanel";
     }
 
     @GetMapping("/user")
     public String userList(Model model){
         model.addAttribute("users", userRepository.findAll());
-        return "userList";
+        return "admin/userList";
     }
 
     @GetMapping("/user/{user}")
     public String userEditForm(@PathVariable User user, Model model){
         model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
-        return "userEdit";
+        return "admin/userEdit";
     }
 
     @PostMapping("/user")
@@ -71,9 +70,57 @@ public class AdminController {
         userRepository.save(user);
         return "redirect:/user";
     }
+
     @GetMapping("/afisha")
-    public String getAfishaList(Model model){
-        model.addAttribute("afisha", afishaRepository.findAll());
-        return "/afishaList";
+    public String afishaList(@RequestParam(required = false, defaultValue = "") String search, Model model){
+        Iterable<Afisha> performances;
+
+        if (search != null && !search.isEmpty())
+            performances = afishaRepository.findByName(search);
+        else {
+            performances = afishaRepository.findAll();
+        }
+        model.addAttribute("afisha", performances);
+        model.addAttribute("filter", search);
+        return "admin/afisha";
+    }
+    @GetMapping("/afisha/{performance}")
+    public String afishaEditForm(@PathVariable Afisha performance, Model model){
+        model.addAttribute("performance", performance);
+        return "admin/afishaEdit";
+    }
+
+    @PostMapping("/afisha")
+    public String editAfisha(
+            @RequestParam String name,
+            @RequestParam Integer seats,
+            @RequestParam("performanceId") Afisha performance
+    ){
+            performance.setName(name);
+            performance.setSeats(seats);
+            afishaRepository.save(performance);
+            return "redirect:/afisha";
+    }
+
+
+    @PostMapping("/afisha/edit")
+    public String addPerformance(
+            @RequestParam String name,
+            @RequestParam Integer seats,
+            Model model) {
+        Afisha afisha = new Afisha(name, seats);
+        afishaRepository.save(afisha);
+
+        Iterable<Afisha> performances = afishaRepository.findAll();
+        model.addAttribute("afisha", performances);
+
+        return "redirect:/afisha";
+    }
+
+    @GetMapping("/afisha/delete/{performance}")
+    public String deletePerformance(
+            @PathVariable Afisha performance){
+        afishaRepository.delete(performance);
+        return "redirect:/afisha";
     }
 }

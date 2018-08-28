@@ -1,4 +1,4 @@
-<#import "parts/common.ftl" as c>
+<#import "../parts/common.ftl" as c>
 <@c.page>
     <table border="1">
         <thead>

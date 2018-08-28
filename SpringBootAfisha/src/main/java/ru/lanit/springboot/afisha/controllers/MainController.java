@@ -5,7 +5,6 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ru.lanit.springboot.afisha.entities.Afisha;
 import ru.lanit.springboot.afisha.repos.AfishaRepository;
@@ -17,8 +16,6 @@ public class MainController {
     @Autowired
     private AfishaRepository afishaRepository;
 
-    @Autowired
-    private UserRepository userRepository;
 
     @GetMapping("/")
     public String showIndex(@RequestParam(required = false, defaultValue = "") String search, Model model) {
@@ -39,24 +36,9 @@ public class MainController {
         return "redirect: /";
     }
 
-
     @GetMapping("/userPanel")
     @PreAuthorize("hasAuthority('USER')")
     public String showUserPanel(Model model) {
         return "userPanel";
-    }
-
-    @PostMapping("/")
-    public String add(
-            @RequestParam String name,
-            @RequestParam Integer seats,
-            Model model) {
-        Afisha afisha = new Afisha(name, seats);
-        afishaRepository.save(afisha);
-
-        Iterable<Afisha> performances = afishaRepository.findAll();
-        model.addAttribute("afisha", performances);
-
-        return "index";
     }
 }
