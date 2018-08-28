@@ -6,15 +6,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.lanit.springboot.afisha.entities.User;
-import ru.lanit.springboot.afisha.enums.Role;
-import ru.lanit.springboot.afisha.repos.UserRepository;
-
-import java.util.Collections;
+import ru.lanit.springboot.afisha.service.UserService;
 
 @Controller
 public class RegistrationController {
     @Autowired
-    private UserRepository userRepository;
+    private UserService userService;
 
     @GetMapping("/sign-up")
     public String registration(){
@@ -23,15 +20,10 @@ public class RegistrationController {
 
     @PostMapping("/sign-up")
     public String addUser(User user, Model model){
-        User userFromDB = userRepository.findByUsername(user.getUsername());
-
-        if (userFromDB != null){
+        if (!userService.addUser(user)){
             model.addAttribute("message", "User already exists!");
             return "sign-up";
         }
-        user.setActive(true);
-        user.setRoles(Collections.singleton(Role.USER));
-        userRepository.save(user);
         return "redirect:/login";
     }
 }

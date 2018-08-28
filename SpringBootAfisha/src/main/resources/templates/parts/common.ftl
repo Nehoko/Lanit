@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Afisha</title>
+    <link rel="stylesheet" href="/static/style.css"
     <@h.header/>
 </head>
 <body>
