@@ -20,7 +20,7 @@
             <#list afisha as performance>
             <tr>
                 <td>${performance.id}</td>
-                <td>${performance.name}</td>
+                <td><a href="/performance/${performance.id}">${performance.name}</a></td>
                 <td>${performance.seats}</td>
             </tr>
             </#list>

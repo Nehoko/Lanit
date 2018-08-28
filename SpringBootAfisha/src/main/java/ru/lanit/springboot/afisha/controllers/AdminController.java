@@ -72,7 +72,9 @@ public class AdminController {
     }
 
     @GetMapping("/afisha")
-    public String afishaList(@RequestParam(required = false, defaultValue = "") String search, Model model){
+    public String afishaList(
+            @RequestParam(required = false, defaultValue = "") String search,
+            Model model){
         Iterable<Afisha> performances;
 
         if (search != null && !search.isEmpty())
@@ -82,6 +84,7 @@ public class AdminController {
         }
         model.addAttribute("afisha", performances);
         model.addAttribute("filter", search);
+        model.addAttribute("nullAfisha", new Afisha());
         return "admin/afisha";
     }
     @GetMapping("/afisha/{performance}")
@@ -94,10 +97,26 @@ public class AdminController {
     public String editAfisha(
             @RequestParam String name,
             @RequestParam Integer seats,
+            @RequestParam ("seats_on_parter") Integer parterSeats,
+            @RequestParam ("price_parter") Integer parterPrice,
+            @RequestParam ("seats_on_balcony") Integer balconySeats,
+            @RequestParam ("price_balcony") Integer balconyPrice,
+            @RequestParam ("seats_on_dress_circle") Integer dressCircleSeats,
+            @RequestParam ("price_dress_circle") Integer dressCirclePrice,
             @RequestParam("performanceId") Afisha performance
     ){
             performance.setName(name);
             performance.setSeats(seats);
+
+            performance.setSeats_on_balcony(balconySeats);
+            performance.setPrice_balcony(balconyPrice);
+
+            performance.setSeats_on_parter(parterSeats);
+            performance.setPrice_parter(parterPrice);
+
+            performance.setSeats_on_dress_circle(dressCircleSeats);
+            performance.setPrice_dress_circle(dressCirclePrice);
+
             afishaRepository.save(performance);
             return "redirect:/afisha";
     }

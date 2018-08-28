@@ -41,6 +41,34 @@ public class Afisha{
 
     private SimpleDateFormat dateFormat;
 
+    private String description;
+
+    private final String balcony = "balcony";
+
+    private final String parter = "parter";
+
+    private final String dress_circle = "dress_circle";
+
+    public String getBalcony() {
+        return balcony;
+    }
+
+    public String getParter() {
+        return parter;
+    }
+
+    public String getDress_circle() {
+        return dress_circle;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public Integer getId() {
         return id;
     }
