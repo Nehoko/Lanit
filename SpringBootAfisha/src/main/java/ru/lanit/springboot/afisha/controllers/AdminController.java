@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ru.lanit.springboot.afisha.entities.Afisha;
+import ru.lanit.springboot.afisha.entities.Theater;
 import ru.lanit.springboot.afisha.entities.User;
 import ru.lanit.springboot.afisha.enums.Role;
 import ru.lanit.springboot.afisha.repos.AfishaRepository;
+import ru.lanit.springboot.afisha.repos.TheaterRepository;
 import ru.lanit.springboot.afisha.repos.UserRepository;
 
 import java.util.Arrays;
@@ -27,6 +29,9 @@ public class AdminController {
 
     @Autowired
     AfishaRepository afishaRepository;
+
+    @Autowired
+    TheaterRepository theaterRepository;
 
     @GetMapping("/adminPanel")
     public String showAdminPanel(Model model) {
@@ -141,5 +146,34 @@ public class AdminController {
             @PathVariable Afisha performance){
         afishaRepository.delete(performance);
         return "redirect:/afisha";
+    }
+
+    @GetMapping("/theaterEdit")
+    public String showTheaters(@RequestParam(required = false, defaultValue = "") String search, Model model){
+        Iterable<Theater> theaters;
+
+        if (search !=null && !search.isEmpty())
+            theaters = theaterRepository.findByName(search);
+        else {
+            theaters = theaterRepository.findAll();
+        }
+        model.addAttribute("theaters", theaters);
+        model.addAttribute("filter", search);
+        return "admin/theater";
+    }
+
+    @PostMapping("/theaterEdit")
+    public String addTheater(
+            @RequestParam String name,
+            @RequestParam String address,
+            @RequestParam Integer mailbox,
+            @RequestParam("theaterId") Theater theater
+    ){
+        theater.setName(name);
+        theater.setAddress(address);
+        theater.setMailbox(mailbox);
+        theaterRepository.save(theater);
+
+        return "redirect:/theaterEdit";
     }
 }

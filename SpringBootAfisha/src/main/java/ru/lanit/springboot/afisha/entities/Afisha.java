@@ -1,9 +1,6 @@
 package ru.lanit.springboot.afisha.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -48,6 +45,10 @@ public class Afisha{
     private final String parter = "parter";
 
     private final String dress_circle = "dress_circle";
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "theater_id")
+    private Theater theater;
 
     public String getBalcony() {
         return balcony;

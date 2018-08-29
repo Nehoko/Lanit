@@ -1,9 +1,9 @@
-<#import "parts/common.ftl" as c>
-<#import "parts/search.ftl" as s>
+<#import "../parts/common.ftl" as c>
+<#import "../parts/search.ftl" as s>
 <@c.page>
 <p>
     <div>
-        <@s.search "/" "${filter!}"/>
+        <@s.search "/theater/{theater}" "${filter!}"/>
     </div>
 
         <table border="1">

@@ -9,7 +9,8 @@
     <a href="/userPanel">Личный кабинет</a>
     |
     <a href="/sign-up">Регистрация</a>
-
+    |
+    <a href="/theaters">Список Театров</a>
     <p>
 
     <div>
