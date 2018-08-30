@@ -2,6 +2,7 @@ package ru.lanit.springboot.afisha.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,26 +34,27 @@ public class AdminController {
     @Autowired
     TheaterRepository theaterRepository;
 
+    //Панель управления Администрации
     @GetMapping("/adminPanel")
     public String showAdminPanel(Model model) {
         Iterable<Afisha> performances = afishaRepository.findAll();
         model.addAttribute("afisha", performances);
         return "admin/adminPanel";
     }
-
+    //Список пользователей
     @GetMapping("/user")
     public String userList(Model model){
         model.addAttribute("users", userRepository.findAll());
         return "admin/userList";
     }
-
+    //Один пользователь из списка
     @GetMapping("/user/{user}")
     public String userEditForm(@PathVariable User user, Model model){
         model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
         return "admin/userEdit";
     }
-
+    //Изменение информации о пользователе
     @PostMapping("/user")
     public String userSave(
             @RequestParam String username,
@@ -75,31 +77,36 @@ public class AdminController {
         userRepository.save(user);
         return "redirect:/user";
     }
-
-    @GetMapping("/afisha")
-    public String afishaList(
+    //Афиша определённого театра из списка театров с возможностью редактирования
+    @GetMapping("/theater/{theater}/afisha/edit")
+    public String theaterAfishaEditList(
+            @PathVariable Theater theater,
             @RequestParam(required = false, defaultValue = "") String search,
             Model model){
         Iterable<Afisha> performances;
+            if(search != null && !search.isEmpty())
+                performances = afishaRepository.findByTheaterAndName(theater, search);
+            else
+                performances = afishaRepository.findByTheater(theater);
 
-        if (search != null && !search.isEmpty())
-            performances = afishaRepository.findByName(search);
-        else {
-            performances = afishaRepository.findAll();
-        }
         model.addAttribute("afisha", performances);
         model.addAttribute("filter", search);
         model.addAttribute("nullAfisha", new Afisha());
+        model.addAttribute("theater", theater);
         return "admin/afisha";
     }
-    @GetMapping("/afisha/{performance}")
-    public String afishaEditForm(@PathVariable Afisha performance, Model model){
+    //Страница редактирования спектакля
+    @GetMapping("/afisha/{performance}/edit")
+    public String performanceEditForm(
+            @PathVariable Afisha performance,
+            Model model){
         model.addAttribute("performance", performance);
         return "admin/afishaEdit";
     }
-
-    @PostMapping("/afisha")
+    //Редактирование афиши определенного театра
+    @PostMapping("/theater/{theater}/afisha/edit")
     public String editAfisha(
+            @PathVariable Theater theater,
             @RequestParam String name,
             @RequestParam Integer seats,
             @RequestParam ("seats_on_parter") Integer parterSeats,
@@ -108,7 +115,8 @@ public class AdminController {
             @RequestParam ("price_balcony") Integer balconyPrice,
             @RequestParam ("seats_on_dress_circle") Integer dressCircleSeats,
             @RequestParam ("price_dress_circle") Integer dressCirclePrice,
-            @RequestParam("performanceId") Afisha performance
+            @RequestParam("performanceId") Afisha performance,
+            Model model
     ){
             performance.setName(name);
             performance.setSeats(seats);
@@ -123,32 +131,56 @@ public class AdminController {
             performance.setPrice_dress_circle(dressCirclePrice);
 
             afishaRepository.save(performance);
-            return "redirect:/afisha";
+
+            model.addAttribute("theater", theater);
+            return "redirect:/theater/{theater}/afisha/edit";
     }
 
-
-    @PostMapping("/afisha/edit")
+    //Добавление спектакля в афишу
+    @PostMapping("/theater/{theater}/afisha/add")
     public String addPerformance(
+            @PathVariable Theater theater,
             @RequestParam String name,
             @RequestParam Integer seats,
+            @RequestParam ("seats_on_parter") Integer parterSeats,
+            @RequestParam ("price_parter") Integer parterPrice,
+            @RequestParam ("seats_on_balcony") Integer balconySeats,
+            @RequestParam ("price_balcony") Integer balconyPrice,
+            @RequestParam ("seats_on_dress_circle") Integer dressCircleSeats,
+            @RequestParam ("price_dress_circle") Integer dressCirclePrice,
+            @RequestParam String description,
             Model model) {
-        Afisha afisha = new Afisha(name, seats);
-        afishaRepository.save(afisha);
+        Afisha performance = new Afisha(name, seats);
+        performance.setTheater(theater);
 
-        Iterable<Afisha> performances = afishaRepository.findAll();
+        performance.setSeats_on_balcony(balconySeats);
+        performance.setPrice_balcony(balconyPrice);
+
+        performance.setSeats_on_parter(parterSeats);
+        performance.setPrice_parter(parterPrice);
+
+        performance.setSeats_on_dress_circle(dressCircleSeats);
+        performance.setPrice_dress_circle(dressCirclePrice);
+
+        performance.setDescription(description);
+        afishaRepository.save(performance);
+
+        Iterable<Afisha> performances = afishaRepository.findByTheater(theater);
         model.addAttribute("afisha", performances);
+        model.addAttribute("theater", theater);
 
-        return "redirect:/afisha";
+        return "redirect:/theater/{theater}/afisha/edit";
     }
-
-    @GetMapping("/afisha/delete/{performance}")
+    //Удаление спектакля из афиши театра
+    @GetMapping("/theater/{theater}/afisha/delete/{performance}")
     public String deletePerformance(
+            @PathVariable Theater theater,
             @PathVariable Afisha performance){
         afishaRepository.delete(performance);
-        return "redirect:/afisha";
+        return "redirect:theater/{theater}/afisha";
     }
-
-    @GetMapping("/theaterEdit")
+    //Список театров с возможностью редактирования
+    @GetMapping("/theater/edit")
     public String showTheaters(@RequestParam(required = false, defaultValue = "") String search, Model model){
         Iterable<Theater> theaters;
 
@@ -157,23 +189,41 @@ public class AdminController {
         else {
             theaters = theaterRepository.findAll();
         }
+        model.addAttribute("nullTheater", new Theater());
         model.addAttribute("theaters", theaters);
         model.addAttribute("filter", search);
         return "admin/theater";
     }
-
-    @PostMapping("/theaterEdit")
+    //Добавление нового театра в список театров
+    @PostMapping("/theater/edit")
     public String addTheater(
             @RequestParam String name,
             @RequestParam String address,
             @RequestParam Integer mailbox,
-            @RequestParam("theaterId") Theater theater
+            @RequestParam(required = false, defaultValue = "") String description,
+            Model model
     ){
-        theater.setName(name);
-        theater.setAddress(address);
-        theater.setMailbox(mailbox);
+        Theater theater = new Theater(name, address, mailbox);
+        theater.setDescription(description);
         theaterRepository.save(theater);
 
-        return "redirect:/theaterEdit";
+        Iterable<Theater> theaters = theaterRepository.findAll();
+        model.addAttribute("theaters", theaters);
+
+        return "redirect:/theater/edit";
+    }
+    //Удаление театра из списка театров
+    @GetMapping("/theater/delete/{theater}")
+    public String deleteTheater(@PathVariable Theater theater){
+        theaterRepository.delete(theater);
+
+        return "redirect:/theater/edit";
+    }
+    //Просмотр конкретного театра с возможностью редактирования
+    @GetMapping("/theater/{theater}/edit")
+    public String editTheaterForm(@PathVariable Theater theater, Model model){
+        model.addAttribute("theater",theater);
+
+        return "admin/theaterEdit";
     }
 }

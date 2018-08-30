@@ -1,10 +1,10 @@
 <#import "../parts/common.ftl" as c>
 <@c.page>
 <p>
-    <a href="/afisha">Афиша</a>
+    <a href="/theater/1/afisha/edit">Афиша нашего театра</a>
 <p>
     <a href="/user">Список пользователей</a>
 <p>
-    <a href="/theatersEditor">Список театров</a>
+    <a href="/theater/edit">Список театров</a>
 
 </@c.page>

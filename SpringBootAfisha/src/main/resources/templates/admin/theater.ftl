@@ -1,33 +1,19 @@
 <#import "../parts/common.ftl" as c>
 <#import "../parts/search.ftl" as s>
-
+<#import "../parts/crudTheater.ftl" as crud>
+<#import "../parts/adminTheaterPanel.ftl" as atp>
 
 <@c.page>
 <div>
-    <@s.search "/theaterEdit" "${filter!}"/>
+    <@s.search "/theater/edit" "${filter!}"/>
 </div>
+<p>
 <div>
-    <table border="1">
-        <caption>Список театров</caption>
-        <thead>
-        <tr>
-            <th>Название</th>
-            <th>Афиша</th>
-            <th></th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        <#list theaters as theater>
-        <tr>
-            <td>${theater.name}</td>
-            <td><a href="/theater/${theater.id}/afishaEdit">Открыть</a></td>
-            <td><a href="/theaters/${theater.id}/edit">edit</a> </td>
-            <td><a href="/theaters/${theater.id}/delete">delete</a> </td>
-        </tr>
-        </#list>
-        </tbody>
-    </table>
+    <@crud.crudTheater "/theater/edit" nullTheater/>
+</div>
+<p>
+<div>
+    <@atp.atp theaters/>
 </div>
 
 </@c.page>

@@ -15,7 +15,6 @@
 
         <p><label><input type="number" name="seats_on_dress_circle" value="${performance.seats_on_dress_circle!}">Места на бельэтаже</label></p>
         <p><label><input type="number" name="price_dress_circle" value="${performance.price_dress_circle!}">Цена за бельэтаж</label></p>
-
         <p><textarea name="description" value="${performance.description!}" placeholder="Описание спектакля"></textarea></p>
         <@t.token/>
         <button type="submit">Добавить</button>

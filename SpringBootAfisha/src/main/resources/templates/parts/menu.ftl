@@ -10,7 +10,7 @@
     |
     <a href="/sign-up">Регистрация</a>
     |
-    <a href="/theaters">Список Театров</a>
+    <a href="/theater">Список Театров</a>
     <p>
 
     <div>
