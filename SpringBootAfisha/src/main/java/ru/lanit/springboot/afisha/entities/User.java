@@ -119,4 +119,12 @@ public class User implements UserDetails {
         this.roles = roles;
     }
 
+    public boolean isAdmin(){
+        return roles.contains(Role.ADMIN);
+    }
+
+    public boolean isUser(){
+        return roles.contains(Role.USER);
+    }
+
 }

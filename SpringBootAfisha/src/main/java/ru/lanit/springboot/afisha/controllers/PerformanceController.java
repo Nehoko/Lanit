@@ -1,5 +1,6 @@
 package ru.lanit.springboot.afisha.controllers;
 
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,7 @@ public class PerformanceController {
 
     @GetMapping("/performance/{performance}")
     public String performanceInfo(@PathVariable Afisha performance, Model model){
+
         model.addAttribute("performance", performance);
         return "performance/main";
     }

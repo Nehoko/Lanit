@@ -1,0 +1,177 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 134217728 bytes for Failed to commit area from 0x0000000081e00000 to 0x0000000089e00000 of length 134217728.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (c:/jenkins/workspace/zulu9-silver-build-win64/zulu-src/hotspot/src/os/windows/vm/os_windows.cpp:3357), pid=9200, tid=6724
+#
+# JRE version:  (9.0.1+1) (build )
+# Java VM: OpenJDK 64-Bit Server VM (9.0.7.1+1, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:TieredStopAtLevel=1 -Xverify:none -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53439 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -javaagent:L:\JetBrains\IntelliJ IDEA 2018.2.1\lib\idea_rt.jar=53440:L:\JetBrains\IntelliJ IDEA 2018.2.1\bin -Dfile.encoding=UTF-8 ru.lanit.springboot.afisha.AfishaApplication
+
+Host: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 17134 (10.0.17134.1)
+Time: Tue Sep 04 17:57:26 2018 RTZ 2 (ceia) elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000200025b7800):  JavaThread "Unknown thread" [_thread_in_vm, id=6724, stack(0x0000009534500000,0x0000009534600000)]
+
+Stack: [0x0000009534500000,0x0000009534600000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x541df8]
+V  [jvm.dll+0x65172e]
+V  [jvm.dll+0x65263a]
+V  [jvm.dll+0x652c63]
+V  [jvm.dll+0x2178d8]
+V  [jvm.dll+0x53f944]
+V  [jvm.dll+0x536e35]
+V  [jvm.dll+0x2bff7b]
+V  [jvm.dll+0x2bfee3]
+V  [jvm.dll+0x2bfdb2]
+V  [jvm.dll+0x2c1b83]
+V  [jvm.dll+0x305953]
+V  [jvm.dll+0x306066]
+V  [jvm.dll+0x305a53]
+V  [jvm.dll+0x2a05e8]
+V  [jvm.dll+0x2a18b7]
+V  [jvm.dll+0x630c4d]
+V  [jvm.dll+0x63200c]
+V  [jvm.dll+0x313029]
+V  [jvm.dll+0x61a9fe]
+V  [jvm.dll+0x3528a1]
+V  [jvm.dll+0x354651]
+C  [java.exe+0x34f1]
+C  [java.exe+0xddff]
+C  [java.exe+0xdfa6]
+C  [KERNEL32.DLL+0x13034]
+C  [ntdll.dll+0x71431]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x00000200025ca800 GCTaskThread "GC Thread#0" [stack: 0x0000009534600000,0x0000009534700000] [id=11388]
+  0x00000200025cb800 GCTaskThread "GC Thread#1" [stack: 0x0000009534700000,0x0000009534800000] [id=12480]
+  0x00000200025ce000 GCTaskThread "GC Thread#2" [stack: 0x0000009534800000,0x0000009534900000] [id=4132]
+  0x00000200025d6000 GCTaskThread "GC Thread#3" [stack: 0x0000009534900000,0x0000009534a00000] [id=11892]
+  0x0000020020c40800 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000009534f00000,0x0000009535000000] [id=11828]
+  0x0000020020c42000 ConcurrentGCThread "G1 Marker#0" [stack: 0x0000009535000000,0x0000009535100000] [id=960]
+  0x00000200025e2800 ConcurrentGCThread "G1 Refine#0" [stack: 0x0000009534d00000,0x0000009534e00000] [id=14056]
+  0x00000200025df000 ConcurrentGCThread "G1 Refine#1" [stack: 0x0000009534c00000,0x0000009534d00000] [id=6956]
+  0x00000200025d9800 ConcurrentGCThread "G1 Refine#2" [stack: 0x0000009534b00000,0x0000009534c00000] [id=15296]
+  0x00000200025d7000 ConcurrentGCThread "G1 Refine#3" [stack: 0x0000009534a00000,0x0000009534b00000] [id=9180]
+  0x00000200025f8000 ConcurrentGCThread "G1 Young RemSet Sampling" [stack: 0x0000009534e00000,0x0000009534f00000] [id=13340]
+
+=>0x00000200025b7800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6724, stack(0x0000009534500000,0x0000009534600000)]
+
+Threads with active compile tasks:
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00000200025b4a30] Heap_lock - owner thread: 0x00000200025b7800
+
+Heap address: 0x0000000081e00000, size: 2018 MB, Compressed Oops mode: Non-zero based: 0x0000000081e00000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6185f0000 - 0x00007ff61862d000 	C:\Users\fun4l\.sdkman\candidates\java\9.0.7-zulu\bin\java.exe
+0x00007ffe294d0000 - 0x00007ffe296b1000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffe26a50000 - 0x00007ffe26b02000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffe262c0000 - 0x00007ffe26533000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffe26c90000 - 0x00007ffe26e20000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffe261a0000 - 0x00007ffe261c0000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffe28f40000 - 0x00007ffe28f68000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffe258f0000 - 0x00007ffe25a82000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffe26540000 - 0x00007ffe265df000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffe261c0000 - 0x00007ffe262ba000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffe12b70000 - 0x00007ffe12dd9000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.228_none_fb4599993062b194\COMCTL32.dll
+0x00007ffe27170000 - 0x00007ffe2720e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffe29170000 - 0x00007ffe29493000 	C:\WINDOWS\System32\combase.dll
+0x00007ffe28e00000 - 0x00007ffe28f24000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffe265e0000 - 0x00007ffe2665a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffe28dd0000 - 0x00007ffe28dfd000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffe1ad60000 - 0x00007ffe1ae4f000 	C:\Users\fun4l\.sdkman\candidates\java\9.0.7-zulu\bin\msvcr120.dll
+0x00007ffe1bec0000 - 0x00007ffe1bf66000 	C:\Users\fun4l\.sdkman\candidates\java\9.0.7-zulu\bin\msvcp120.dll
+0x0000000056f20000 - 0x00000000578d4000 	C:\Users\fun4l\.sdkman\candidates\java\9.0.7-zulu\bin\server\jvm.dll
+0x00007ffe273b0000 - 0x00007ffe27451000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffe270f0000 - 0x00007ffe2714b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffe269e0000 - 0x00007ffe269e8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffe15e30000 - 0x00007ffe15e39000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffe23ab0000 - 0x00007ffe23ad3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffe26b10000 - 0x00007ffe26b7c000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffe21940000 - 0x00007ffe2194a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffe23a80000 - 0x00007ffe23aaa000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffe258a0000 - 0x00007ffe258e9000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffe235d0000 - 0x00007ffe235df000 	C:\Users\fun4l\.sdkman\candidates\java\9.0.7-zulu\bin\verify.dll
+0x00007ffe234e0000 - 0x00007ffe23507000 	C:\Users\fun4l\.sdkman\candidates\java\9.0.7-zulu\bin\java.dll
+0x00007ffe1acd0000 - 0x00007ffe1acfa000 	C:\Users\fun4l\.sdkman\candidates\java\9.0.7-zulu\bin\instrument.dll
+0x00007ffe23590000 - 0x00007ffe235a6000 	C:\Users\fun4l\.sdkman\candidates\java\9.0.7-zulu\bin\zip.dll
+0x00007ffe234d0000 - 0x00007ffe234da000 	C:\Users\fun4l\.sdkman\candidates\java\9.0.7-zulu\bin\jimage.dll
+0x00007ffe09de0000 - 0x00007ffe09fa9000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -XX:TieredStopAtLevel=1 -Xverify:none -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53439 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -javaagent:L:\JetBrains\IntelliJ IDEA 2018.2.1\lib\idea_rt.jar=53440:L:\JetBrains\IntelliJ IDEA 2018.2.1\bin -Dfile.encoding=UTF-8 
+java_command: ru.lanit.springboot.afisha.AfishaApplication
+java_class_path (initial): C:\Users\fun4l\dev\study\Lanit\SpringBootAfisha\target\classes;C:\Users\fun4l\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.0.3.RELEASE\spring-boot-starter-web-2.0.3.RELEASE.jar;C:\Users\fun4l\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.3.RELEASE\spring-boot-starter-2.0.3.RELEASE.jar;C:\Users\fun4l\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.3.RELEASE\spring-boot-starter-logging-2.0.3.RELEASE.jar;C:\Users\fun4l\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\fun4l\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\fun4l\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\Users\fun4l\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\fun4l\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\fun4l\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\fun4l\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\fun4l\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.0.3.RELEASE\spring-boot-starter-json-2.0.3.RELEASE.jar;C:\Users\fun4l\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.6\jackson-databind-2.9.6.jar;C:\Users\fun4l\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\fun4l\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar;C:\Users\fun4l\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.6\jackson-datatype-jdk8-2.9.6.jar;C:\Users\fun4l\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.6\jackson-datatype-jsr310-2.9.6.jar;C:\Users\fun4l\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.6\jackson-module-parameter-names-2.9.6.jar;C:\Users\fun4l\.m2\reposit
+Launcher Type: SUN_STANDARD
+
+Logging:
+Log output configuration:
+#0: stdout all=warning uptime,level,tags
+#1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-9.0.4
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;L:\MATLAB\R2016b\runtime\win64;L:\MATLAB\R2016b\bin;L:\MATLAB\R2016b\polyspace\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk-9.0.4\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\ProgramData\chocolatey\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\fun4l\AppData\Local\Microsoft\WindowsApps;
+USERNAME=fun4l
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 17134 (10.0.17134.1)
+
+CPU:total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 158 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, physical 8260772k(1867300k free), swap 8260772k(114408k free)
+
+vm_info: OpenJDK 64-Bit Server VM (9.0.7.1+1) for windows-amd64 JRE (9.0.7.1+1), built on Apr  6 2018 03:06:52 by "" with MS VC++ 12.0 (VS2013)
+
+END.

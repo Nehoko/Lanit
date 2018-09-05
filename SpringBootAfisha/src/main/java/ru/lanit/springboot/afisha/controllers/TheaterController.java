@@ -1,10 +1,7 @@
 package ru.lanit.springboot.afisha.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +12,6 @@ import ru.lanit.springboot.afisha.repos.AfishaRepository;
 import ru.lanit.springboot.afisha.repos.TheaterRepository;
 
 import javax.persistence.EntityManager;
-import java.util.Optional;
 
 @Controller
 public class TheaterController {
@@ -24,6 +20,9 @@ public class TheaterController {
 
     @Autowired
     AfishaRepository afishaRepository;
+
+    @Autowired
+    EntityManager entityManager;
 
     @GetMapping("/theater")
     public String showTheaters(
@@ -49,6 +48,12 @@ public class TheaterController {
             @PathVariable Theater theater,
             Model model
     ){
+
+//        Session session = entityManager.unwrap(Session.class);
+//        SessionFactory sessionFactory = session.getSessionFactory();
+//        sessionFactory.getCurrentSession();
+
+//        entityManager.isJoinedToTransaction();
         Iterable<Afisha> afisha;
 
         if(search!=null && !search.isEmpty())
