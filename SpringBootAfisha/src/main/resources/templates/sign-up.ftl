@@ -3,5 +3,5 @@
 <@c.page>
 Регистрация
     ${message!}
-<@l.login "/sign-up"/>
+<@l.login "/sign-up" true/>
 </@c.page>

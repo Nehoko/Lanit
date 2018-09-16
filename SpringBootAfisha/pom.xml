@@ -54,8 +54,6 @@
             <scope>test</scope>
         </dependency>
 
-
-
         <!-- JPA Data (We are going to use Repositories, Entities, Hibernate, etc...) -->
 
         <dependency>

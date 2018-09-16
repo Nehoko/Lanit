@@ -46,9 +46,17 @@ public class Afisha{
 
     private final String dress_circle = "dress_circle";
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
     @JoinColumn(name = "theater_id")
     private Theater theater;
+
+    public Theater getTheater() {
+        return theater;
+    }
+
+    public void setTheater(Theater theater) {
+        this.theater = theater;
+    }
 
     public String getBalcony() {
         return balcony;

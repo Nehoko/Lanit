@@ -13,7 +13,7 @@
         <input type="hidden" value="${performance.balcony}" name="place">
         <input type="hidden" value="${performance.id}" name="performanceId">
         <@t.token/>
-        <button type="submit">Купить за ${performance.price_balcony} руб.</button>
+        <button class="btn btn-primary" type="submit">Купить за ${performance.price_balcony} руб.</button>
     </form>
 </div>
 <div>
@@ -22,7 +22,7 @@
         <input type="hidden" value="${performance.dress_circle}" name="place">
         <input type="hidden" value="${performance.id}" name="performanceId">
         <@t.token/>
-        <button type="submit">Купить за ${performance.price_dress_circle} руб.</button>
+        <button class="btn btn-primary" type="submit">Купить за ${performance.price_dress_circle} руб.</button>
     </form>
 </div>
 <div>
@@ -31,7 +31,7 @@
         <input type="hidden" value="${performance.parter}" name="place">
         <input type="hidden" value="${performance.id}" name="performanceId">
         <@t.token/>
-        <button type="submit">Купить за ${performance.price_parter} руб.</button>
+        <button class="btn btn-primary" type="submit">Купить за ${performance.price_parter} руб.</button>
     </form>
 </div>
 <p>

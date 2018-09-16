@@ -4,6 +4,7 @@
 <@c.page>
 Редактирование театра
 
-    <@crud.crudTheater "/theater/edit" theater />
-    <a href="theater/${theater.id}/afisha">Редактирование афиши</a>
+    <@crud.crudTheater "/theater/${theater.id}/edit" theater />
+<p>
+    <a href="/theater/${theater.id}/afisha/edit">Редактирование афиши</a>
 </@c.page>

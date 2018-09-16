@@ -24,7 +24,7 @@ public class Theater {
         setMailbox(mailbox);
     }
 
-    @OneToMany(mappedBy = "theater", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "theater", fetch = FetchType.LAZY)
     private Set<Afisha> performances;
 
     public Set<Afisha> getPerformances() {
