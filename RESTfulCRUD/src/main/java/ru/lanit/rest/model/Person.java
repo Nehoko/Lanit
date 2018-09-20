@@ -1,14 +1,13 @@
 package ru.lanit.rest.model;
 
 
-import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonBackReference;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -27,7 +26,7 @@ public class Person implements Serializable {
     @NotNull
     private String birthdate;
 
-
+    @JsonBackReference
     @OneToMany(mappedBy = "owner", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Car> cars;
 
@@ -83,25 +82,5 @@ public class Person implements Serializable {
     public Set<Car> getCars() {
         return cars;
     }
-    //    public void setCars(Set<Car> cars) {
-//        this.cars = cars;
-//    }
 
-
-
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return Objects.equals(id, person.id) &&
-                Objects.equals(name, person.name) &&
-                Objects.equals(birthdate, person.birthdate);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, birthdate);
-    }
 }

@@ -20,14 +20,13 @@ public class CarService {
     private CarDAO carDAO;
 
     @Inject
-    private PersonDAO personDAO;
+    PersonDAO personDAO;
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Transactional
     public Car addCar(Car car){
         car.setOwner(personDAO.getPerson(car.getOwnerId()));
-
         return carDAO.addCar(car);
     }
 

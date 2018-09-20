@@ -1,5 +1,7 @@
 package ru.lanit.rest.model;
 
+import org.codehaus.jackson.annotate.JsonManagedReference;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
@@ -20,9 +22,8 @@ public class Car implements Serializable {
     @NotNull
     private Integer horsepower;
 
-
-
     @NotNull
+    @JsonManagedReference
     @ManyToOne
     @JoinColumn(name = "owner_id")
     private Person owner;
