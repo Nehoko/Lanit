@@ -1,0 +1,5 @@
+<root>
+    <item name='java.util.HashSet'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>
