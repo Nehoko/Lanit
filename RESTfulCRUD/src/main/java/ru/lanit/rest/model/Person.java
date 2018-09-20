@@ -1,9 +1,13 @@
 package ru.lanit.rest.model;
 
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Objects;
 import java.util.Set;
 
@@ -12,7 +16,7 @@ import java.util.Set;
 public class Person implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @NotNull
     private Long id;
 
     @Column(name="name")
@@ -23,16 +27,30 @@ public class Person implements Serializable {
     @NotNull
     private String birthdate;
 
-    @JoinColumn(name = "car_id")
-    @OneToMany(targetEntity = Car.class,fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+
+    @OneToMany(mappedBy = "owner", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Car> cars;
+
+
 
     public Person(){}
 
     public Person(Long id, String name, String birthdate){
-        this.id = id;
-        this.name = name;
-        this.birthdate = birthdate;
+        setId(id);
+        setName(name);
+        try {
+            setBirthdate(birthdate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public Person(Long id){
+        setId(id);
+    }
+
+    public void setCars(Set<Car> cars) {
+        this.cars = cars;
     }
 
     public Long getId() {
@@ -55,9 +73,21 @@ public class Person implements Serializable {
         return birthdate;
     }
 
-    public void setBirthdate(String birthdate) {
+    public void setBirthdate(String birthdate) throws ParseException {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+        sdf.parse(birthdate);
         this.birthdate = birthdate;
     }
+
+    public Set<Car> getCars() {
+        return cars;
+    }
+    //    public void setCars(Set<Car> cars) {
+//        this.cars = cars;
+//    }
+
+
 
 
     @Override

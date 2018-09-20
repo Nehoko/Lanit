@@ -1,32 +1,32 @@
 package ru.lanit.rest.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name="statistics")
 public class Statistics implements Serializable {
 
     @Id
-    private static final long id = 1L;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id = 1L;
 
     @Column(name="person_count")
     @NotNull
-    private static Long personcount;
+    private Long personcount;
 
     @Column(name="car_count")
     @NotNull
-    private static Long carcount;
+    private Long carcount;
 
     @Column(name="unique_vendor_count")
     @NotNull
-    private static Long uniquevendorcount;
+    private Long uniquevendorcount;
 
-    public static void incrementPersoncount(){
+    public void incrementPersoncount(){
         if (personcount!=0)
         personcount++;
         else {
@@ -34,7 +34,7 @@ public class Statistics implements Serializable {
         }
     }
 
-    public static void incrementCarcount(){
+    public  void incrementCarcount(){
         if (carcount!=0)
         carcount++;
         else{
@@ -42,7 +42,7 @@ public class Statistics implements Serializable {
         }
     }
 
-    public static void incrementUniquevendorcount(){
+    public  void incrementUniquevendorcount(){
         if (carcount!=0)
         uniquevendorcount++;
         else{
@@ -50,7 +50,7 @@ public class Statistics implements Serializable {
         }
     }
 
-    public static void decrementPersoncount() throws Exception {
+    public  void decrementPersoncount() throws Exception {
         if (personcount!=0)
             personcount--;
         else {
@@ -58,7 +58,7 @@ public class Statistics implements Serializable {
         }
     }
 
-    public static void decrementCarcount() throws Exception {
+    public  void decrementCarcount() throws Exception {
         if (carcount!=0)
             carcount--;
         else{
@@ -66,12 +66,29 @@ public class Statistics implements Serializable {
         }
     }
 
-    public static void decrementUniquevendorcount() throws Exception {
+    public  void decrementUniquevendorcount() throws Exception {
         if (carcount!=0)
             uniquevendorcount--;
         else{
             throw new Exception("Vendor count cannot be less than 0");
         }
+    }
+
+
+    public void setPersoncount(Long personcount) {
+        this.personcount = personcount;
+    }
+
+    public void setCarcount(Long carcount) {
+        this.carcount = carcount;
+    }
+
+    public void setUniquevendorcount(Long uniquevendorcount) {
+        this.uniquevendorcount = uniquevendorcount;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public Long getPersoncount() {
@@ -87,7 +104,28 @@ public class Statistics implements Serializable {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Statistics that = (Statistics) o;
+        return id == that.id &&
+                Objects.equals(personcount, that.personcount) &&
+                Objects.equals(carcount, that.carcount) &&
+                Objects.equals(uniquevendorcount, that.uniquevendorcount);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, personcount, carcount, uniquevendorcount);
+    }
+
+    @Override
     public String toString() {
-        return "Statistics{}";
+        return "Statistics{" +
+                "id=" + id +
+                ", personcount=" + personcount +
+                ", carcount=" + carcount +
+                ", uniquevendorcount=" + uniquevendorcount +
+                '}';
     }
 }

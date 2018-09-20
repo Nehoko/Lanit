@@ -13,7 +13,7 @@ public class StatisticsDAO {
     private EntityManager entityManager;
 
     public  Statistics getStatistics(){
-        return entityManager.find(Statistics.class, 1L);
+        return entityManager.find(Statistics.class,1L);
     }
 
 }

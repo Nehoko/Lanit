@@ -5,25 +5,29 @@ import ru.lanit.rest.model.Person;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
 
 @RequestScoped
-@Path("/person")
+@Path("/")
 public class PersonService {
 
     @Inject
     PersonDAO personDAO;
 
-    @Path("/personwithcars?personid={personId}")
+    @Path("personwithcars")
     @Produces(MediaType.APPLICATION_JSON)
     @GET
-    public Person getPersonWithCars(Long personId){
+    public Person getPersonWithCars(@QueryParam("personid") Long personId){
         return personDAO.getPerson(personId);
     }
 
+
+    @Path("person")
     @POST
+    @Transactional
     @Consumes(MediaType.APPLICATION_JSON)
     public Person addPerson(Person person){
         return personDAO.addPerson(person);

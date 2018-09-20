@@ -18,6 +18,7 @@ import java.util.LinkedList;
 
 
 @RequestScoped
+@Path("/")
 public class MainService {
 
     @Inject
@@ -32,16 +33,17 @@ public class MainService {
     @Inject
     EntityManager entityManager;
 
-    @Path("/statistics")
+    @Path("statistics")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Statistics getStatistics(){
-        return statisticsDAO.getStatistics();
+        Statistics statistics = statisticsDAO.getStatistics();
+        return statistics;
     }
 
-    @Path("/clear")
+    @Path("clear")
     @GET
-    public void clearAll(){
+    public boolean clearAll(){
         LinkedList<Person> personList = (LinkedList<Person>) personDAO.getAllPersons();
         while(!personList.isEmpty()) {
             entityManager.remove(personList.getFirst());
@@ -52,6 +54,7 @@ public class MainService {
             entityManager.remove(carList.getFirst());
             carList.removeFirst();
         }
+        return true;
     }
 
 }

@@ -1,10 +1,11 @@
 ru\lanit\rest\service\CarService.class
+ru\lanit\rest\dao\CarDAO.class
+ru\lanit\rest\utils\Resources.class
+ru\lanit\rest\service\MainService.class
 ru\lanit\rest\model\Car.class
 ru\lanit\rest\service\PersonService.class
-ru\lanit\rest\dao\CarDAO.class
 ru\lanit\rest\model\Person.class
 ru\lanit\rest\JaxRsActivator.class
 ru\lanit\rest\dao\PersonDAO.class
 ru\lanit\rest\dao\StatisticsDAO.class
 ru\lanit\rest\model\Statistics.class
-ru\lanit\rest\service\MainService.class

@@ -3,14 +3,13 @@ package ru.lanit.rest.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.Objects;
 
 @Entity
 @Table(name="car")
 public class Car implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @NotNull
     private Long id;
 
     @Column(name = "model")
@@ -21,18 +20,32 @@ public class Car implements Serializable {
     @NotNull
     private Integer horsepower;
 
+
+
     @NotNull
-    @JoinColumn(name = "owner_id")
-    @ManyToOne(targetEntity = Person.class, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private Person ownerId;
+    @ManyToOne
+    @JoinColumn(name = "owner_id", insertable = false, updatable = false)
+    private Person owner;
+
+    @NotNull
+    @Column(name = "owner_id")
+    private Long ownerId;
+
+    public Long getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(Long ownerId) {
+        this.ownerId = ownerId;
+    }
 
     public Car(){}
 
-    public Car(Long id, String model, Integer horsepower){
-        this.horsepower = horsepower;
-        this.id = id;
-        this.model = model;
-
+    public Car(Long id, String model, Integer horsepower, Long ownerId){
+        setId(id);
+        setModel(model);
+        setHorsepower(horsepower);
+        setOwnerId(ownerId);
     }
 
     public Long getId() {
@@ -48,6 +61,7 @@ public class Car implements Serializable {
     }
 
     public void setModel(String model) {
+        if(model.matches("^[a-zA-Z0-9]+-[a-zA-Z0-9]+$"))
         this.model = model;
     }
 
@@ -59,37 +73,11 @@ public class Car implements Serializable {
         this.horsepower = horsepower;
     }
 
-    public Person getOwnerId() {
-        return ownerId;
+    public Person getOwner() {
+        return owner;
     }
 
-    public void setOwnerId(Person ownerId) {
-        this.ownerId = ownerId;
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "id=" + id +
-                ", model='" + model + '\'' +
-                ", horsepower=" + horsepower +
-                ", ownerId=" + ownerId +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Car car = (Car) o;
-        return Objects.equals(id, car.id) &&
-                Objects.equals(model, car.model) &&
-                Objects.equals(horsepower, car.horsepower) &&
-                Objects.equals(ownerId, car.ownerId);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, model, horsepower, ownerId);
+    public void setOwner(Person owner) {
+        this.owner = owner;
     }
 }

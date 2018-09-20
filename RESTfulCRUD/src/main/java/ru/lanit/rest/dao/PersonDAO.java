@@ -7,6 +7,8 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 @ApplicationScoped
@@ -15,6 +17,9 @@ public class PersonDAO {
     @Inject
     private EntityManager entityManager;
 
+    @Inject
+    private StatisticsDAO statisticsDAO;
+
     public Person getPerson(Long id){
 
         return entityManager.find(Person.class, id);
@@ -22,6 +27,7 @@ public class PersonDAO {
     }
 
     public Person addPerson(Person person){
+        statisticsDAO.getStatistics().incrementPersoncount();
         return entityManager.merge(person);
     }
 
@@ -29,7 +35,8 @@ public class PersonDAO {
         return entityManager.merge(person);
     }
 
-    public void deletePerson(Long id){
+    public void deletePerson(Long id) throws Exception {
+        statisticsDAO.getStatistics().decrementPersoncount();
         entityManager.remove(entityManager.find(Person.class, id));
     }
 
