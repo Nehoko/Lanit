@@ -74,8 +74,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2018-09-19.18:21:48.314</IntrospectionTimestamp>
-      <IntrospectionStateNumber>596</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-09-20.11:39:14.829</IntrospectionTimestamp>
+      <IntrospectionStateNumber>601</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -124,7 +124,7 @@
     <table id="21" parent="14" name="car">
       <ObjectId>16398</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>593</StateNumber>
+      <StateNumber>598</StateNumber>
     </table>
     <table id="22" parent="14" name="person">
       <ObjectId>16384</ObjectId>
@@ -164,82 +164,89 @@
       <StateNumber>596</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="28" parent="21" name="car_pkey">
+    <column id="28" parent="21" name="ownerid">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>601</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="29" parent="21" name="car_pkey">
       <ObjectId>16412</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="29" parent="21" name="car_pkey">
+    <key id="30" parent="21" name="car_pkey">
       <ObjectId>16413</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>car_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="30" parent="22" name="id">
+    <column id="31" parent="22" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>583</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="31" parent="22" name="name">
+    <column id="32" parent="22" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>557</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="32" parent="22" name="birthdate">
+    <column id="33" parent="22" name="birthdate">
       <Position>3</Position>
       <DataType>varchar(10)|0s</DataType>
       <StateNumber>558</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="33" parent="22" name="id">
+    <index id="34" parent="22" name="id">
       <ObjectId>16396</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="34" parent="22" name="id">
+    <key id="35" parent="22" name="id">
       <ObjectId>16397</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>id</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="35" parent="23" name="id">
+    <column id="36" parent="23" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>570</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="36" parent="23" name="person_count">
+    <column id="37" parent="23" name="person_count">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>570</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="37" parent="23" name="car_count">
+    <column id="38" parent="23" name="car_count">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>570</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="38" parent="23" name="unique_vendor_count">
+    <column id="39" parent="23" name="unique_vendor_count">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>570</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="39" parent="23" name="statistics_pkey">
+    <index id="40" parent="23" name="statistics_pkey">
       <ObjectId>16414</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="40" parent="23" name="statistics_pkey">
+    <key id="41" parent="23" name="statistics_pkey">
       <ObjectId>16415</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>statistics_pkey</UnderlyingIndexName>

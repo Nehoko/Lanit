@@ -24,11 +24,11 @@ public class Car implements Serializable {
 
     @NotNull
     @ManyToOne
-    @JoinColumn(name = "owner_id", insertable = false, updatable = false)
+    @JoinColumn(name = "owner_id")
     private Person owner;
 
     @NotNull
-    @Column(name = "owner_id")
+    @Column(name = "ownerid")
     private Long ownerId;
 
     public Long getOwnerId() {
@@ -42,10 +42,10 @@ public class Car implements Serializable {
     public Car(){}
 
     public Car(Long id, String model, Integer horsepower, Long ownerId){
-        setId(id);
-        setModel(model);
-        setHorsepower(horsepower);
-        setOwnerId(ownerId);
+        this.id = id;
+        this.model = model;
+        this.horsepower = horsepower;
+        this.ownerId = ownerId;
     }
 
     public Long getId() {

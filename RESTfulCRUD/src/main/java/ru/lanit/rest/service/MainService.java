@@ -10,6 +10,7 @@ import ru.lanit.rest.model.Statistics;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.transaction.Transactional;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -30,8 +31,6 @@ public class MainService {
     @Inject
     CarDAO carDAO;
 
-    @Inject
-    EntityManager entityManager;
 
     @Path("statistics")
     @GET
@@ -43,18 +42,17 @@ public class MainService {
 
     @Path("clear")
     @GET
-    public boolean clearAll(){
-        LinkedList<Person> personList = (LinkedList<Person>) personDAO.getAllPersons();
-        while(!personList.isEmpty()) {
-            entityManager.remove(personList.getFirst());
-            personList.removeFirst();
+    @Transactional
+    public Statistics clearAll(){
+        try {
+            carDAO.deleteAllCars();
+            personDAO.getAllPersons();
+            return statisticsDAO.getStatistics();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
-        LinkedList<Car> carList = (LinkedList<Car>) carDAO.getAllCars();
-        while (!carList.isEmpty()){
-            entityManager.remove(carList.getFirst());
-            carList.removeFirst();
-        }
-        return true;
+
     }
 
 }

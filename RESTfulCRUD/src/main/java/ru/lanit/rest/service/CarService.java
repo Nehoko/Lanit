@@ -1,6 +1,7 @@
 package ru.lanit.rest.service;
 
 import ru.lanit.rest.dao.CarDAO;
+import ru.lanit.rest.dao.PersonDAO;
 import ru.lanit.rest.model.Car;
 
 import javax.enterprise.context.RequestScoped;
@@ -18,10 +19,15 @@ public class CarService {
     @Inject
     private CarDAO carDAO;
 
+    @Inject
+    private PersonDAO personDAO;
+
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Transactional
     public Car addCar(Car car){
+        car.setOwner(personDAO.getPerson(car.getOwnerId()));
+
         return carDAO.addCar(car);
     }
 

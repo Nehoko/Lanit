@@ -8,6 +8,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -28,12 +29,14 @@ public class CarDAO {
     public Car addCar(Car car) {
         statisticsDAO.getStatistics().incrementCarcount();
         entityManager.merge(car);
+        entityManager.flush();
         checkVendorUniqueness();
         return entityManager.find(Car.class, car);
     }
 
     public  Car updateCar(Car car){
         entityManager.merge(car);
+        entityManager.flush();
         checkVendorUniqueness();
         return entityManager.find(Car.class, car);
     }
@@ -41,6 +44,7 @@ public class CarDAO {
     public void deleteCar(Long id) throws Exception {
         statisticsDAO.getStatistics().decrementCarcount();
         entityManager.remove(entityManager.find(Car.class, id));
+        entityManager.flush();
         checkVendorUniqueness();
     }
 
@@ -48,6 +52,13 @@ public class CarDAO {
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
         CriteriaQuery<Car> carCriteriaQuery = cb.createQuery(Car.class);
         return entityManager.createQuery(carCriteriaQuery).getResultList();
+    }
+
+    public void deleteAllCars() throws Exception {
+        ArrayList<Car> cars = (ArrayList<Car>)getAllCars();
+        while(!cars.isEmpty()){
+            deleteCar((long) (cars.size()-1));
+        }
     }
 
     private void checkVendorUniqueness(){

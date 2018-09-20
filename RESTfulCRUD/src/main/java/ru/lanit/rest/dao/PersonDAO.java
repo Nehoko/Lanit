@@ -28,16 +28,21 @@ public class PersonDAO {
 
     public Person addPerson(Person person){
         statisticsDAO.getStatistics().incrementPersoncount();
-        return entityManager.merge(person);
+        entityManager.merge(person);
+        entityManager.flush();
+        return entityManager.find(Person.class, person);
     }
 
     public Person updatePerson(Person person){
-        return entityManager.merge(person);
+        entityManager.merge(person);
+        entityManager.flush();
+        return entityManager.find(Person.class, person);
     }
 
     public void deletePerson(Long id) throws Exception {
         statisticsDAO.getStatistics().decrementPersoncount();
         entityManager.remove(entityManager.find(Person.class, id));
+        entityManager.flush();
     }
 
     public List<Person> getAllPersons(){
@@ -45,6 +50,13 @@ public class PersonDAO {
         CriteriaQuery<Person> personCriteriaQuery = cb.createQuery(Person.class);
 
         return entityManager.createQuery(personCriteriaQuery).getResultList();
+    }
+
+    public void deleteAllPersons() throws Exception{
+        ArrayList<Person> persons = (ArrayList<Person>) getAllPersons();
+        while (!persons.isEmpty()){
+            deletePerson((long) (persons.size()-1));
+        }
     }
 
 }
