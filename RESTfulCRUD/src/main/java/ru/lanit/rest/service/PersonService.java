@@ -35,8 +35,9 @@ public class PersonService {
     @POST
     @Transactional
     @Consumes(MediaType.APPLICATION_JSON)
-    public Person addPerson(Person person){
-        return personDAO.addPerson(person);
+    public String addPerson(Person person){
+        personDAO.addPerson(person);
+        return "";
     }
 
     private PersonDTO setPersonDTO(Person person){

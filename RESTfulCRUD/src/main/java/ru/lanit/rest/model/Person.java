@@ -8,6 +8,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Set;
 
 @Entity
@@ -24,7 +25,7 @@ public class Person implements Serializable {
 
     @Column(name="birthdate")
     @NotNull
-    private String birthdate;
+    private Date birthdate;
 
     @JsonBackReference
     @OneToMany(mappedBy = "owner", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
@@ -69,14 +70,15 @@ public class Person implements Serializable {
     }
 
     public String getBirthdate() {
-        return birthdate;
+        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+
+        return sdf.format(this.birthdate);
     }
 
     public void setBirthdate(String birthdate) throws ParseException {
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
-        sdf.parse(birthdate);
-        this.birthdate = birthdate;
+        this.birthdate = sdf.parse(birthdate);
     }
 
     public Set<Car> getCars() {

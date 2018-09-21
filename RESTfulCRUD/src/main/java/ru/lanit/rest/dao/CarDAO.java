@@ -69,8 +69,9 @@ public class CarDAO {
         ArrayList<Car> cars = (ArrayList<Car>)getAllCars();
        for(Car car : cars){
            userTransaction.begin();
-           entityManager.remove(entityManager.find(Car.class,car.getId()));
+           entityManager.remove(entityManager.contains(car)? car : entityManager.merge(car));
            userTransaction.commit();
+           checkVendorUniqueness();
        }
     }
 
@@ -79,19 +80,20 @@ public class CarDAO {
         ArrayList<Car> cars = (ArrayList<Car>) getAllCars();
         LinkedList<String> vendors = new LinkedList<>();
 
-        while (!cars.isEmpty()){
-            String[] vendor = cars.get(cars.size()-1).getModel().split("-");
+        for(Car car : cars){
+            String[] vendor = car.getModel().split("-");
             vendors.add(vendor[0]);
-            cars.remove(cars.size()-1);
         }
 
         for(int i = 0 ; i<vendors.size(); i++){
             String vendor = vendors.get(i);
             boolean match = false;
-            for (int j = i+1; i<vendors.size(); i++){
-                String vendorTwo = vendors.get(j);
-                if(vendor.equals(vendorTwo))
-                    match = true;
+            if(vendors.size()>1) {
+                for (int j = i + 1; j < vendors.size(); j++) {
+                    String vendorTwo = vendors.get(j);
+                    if (vendor.equals(vendorTwo))
+                        match = true;
+                }
             }
             if(!match)
                 uvc++;

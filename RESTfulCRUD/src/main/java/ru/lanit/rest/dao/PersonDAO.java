@@ -12,6 +12,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+import javax.transaction.UserTransaction;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -25,6 +26,9 @@ public class PersonDAO {
 
     @Inject
     private StatisticsDAO statisticsDAO;
+
+    @Inject
+    UserTransaction userTransaction;
 
 
     public Person getPerson(Long id){
@@ -65,7 +69,9 @@ public class PersonDAO {
     public void deleteAllPersons() throws Exception{
         ArrayList<Person> persons = (ArrayList<Person>) getAllPersons();
         for(Person person : persons){
-            entityManager.remove(person);
+            userTransaction.begin();
+            entityManager.remove(entityManager.contains(person)? person : entityManager.merge(person));
+            userTransaction.commit();
         }
     }
 

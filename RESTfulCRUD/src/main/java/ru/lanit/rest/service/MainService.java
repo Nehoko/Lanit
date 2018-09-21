@@ -7,6 +7,7 @@ import ru.lanit.rest.model.Statistics;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -31,18 +32,21 @@ public class MainService {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Statistics getStatistics(){
-        Statistics statistics = statisticsDAO.getStatistics();
-        return statistics;
+        return statisticsDAO.getStatistics();
     }
 
     @Path("clear")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Statistics clearAll(){
+    @Transactional
+    public String clearAll(){
         try {
+            statisticsDAO.getStatistics().setUniquevendorcount(0L);
+            statisticsDAO.getStatistics().setPersoncount(0L);
+            statisticsDAO.getStatistics().setCarcount(0L);
             carDAO.deleteAllCars();
-            personDAO.getAllPersons();
-            return statisticsDAO.getStatistics();
+            personDAO.deleteAllPersons();
+            return "";
         } catch (Exception e) {
             e.printStackTrace();
             return null;
