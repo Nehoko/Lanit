@@ -12,6 +12,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 
 @RequestScoped
@@ -31,22 +32,23 @@ public class MainService {
     @Path("statistics")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Statistics getStatistics(){
-        return statisticsDAO.getStatistics();
+    public Response getStatistics(){
+        String response = statisticsDAO.getStatistics().toString();
+        return Response.status(Response.Status.OK).entity(response).build();
     }
 
     @Path("clear")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Transactional
-    public String clearAll(){
+    public Response clearAll(){
         try {
             statisticsDAO.getStatistics().setUniquevendorcount(0L);
             statisticsDAO.getStatistics().setPersoncount(0L);
             statisticsDAO.getStatistics().setCarcount(0L);
             carDAO.deleteAllCars();
             personDAO.deleteAllPersons();
-            return "";
+            return Response.status(Response.Status.OK).build();
         } catch (Exception e) {
             e.printStackTrace();
             return null;

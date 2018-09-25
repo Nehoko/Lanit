@@ -11,6 +11,7 @@ import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -25,9 +26,19 @@ public class PersonService {
     @Path("personwithcars")
     @Produces(MediaType.APPLICATION_JSON)
     @GET
-    public PersonDTO getPersonWithCars(@QueryParam("personid") Long personId){
+    public Response getPersonWithCars(@QueryParam("personid") String personId){
 
-        return setPersonDTO(personDAO.getPerson(personId));
+        if (!personIdIsLong(personId))
+            return Response.status(Response.Status.BAD_REQUEST).build();
+        Long id = Long.parseLong(personId);
+
+        Person person = personDAO.getPerson(id);
+        if(person==null)
+            return Response.status(Response.Status.NOT_FOUND).build();
+
+        PersonDTO personDTO = setPersonDTO(person);
+
+        return Response.status(Response.Status.OK).entity(personDTO).build();
     }
 
 
@@ -35,9 +46,13 @@ public class PersonService {
     @POST
     @Transactional
     @Consumes(MediaType.APPLICATION_JSON)
-    public String addPerson(Person person){
+    public Response addPerson(Person person){
         personDAO.addPerson(person);
-        return "";
+        if (personDAO.getPerson(person.getId())!=null)
+        return Response.status(Response.Status.OK).build();
+        else{
+            return Response.status(Response.Status.BAD_REQUEST).build();
+        }
     }
 
     private PersonDTO setPersonDTO(Person person){
@@ -63,5 +78,16 @@ public class PersonService {
             cars.add(carDTO);
         }
         return cars;
+    }
+
+    private boolean personIdIsLong(String personId){
+
+        try{
+            Long id = Long.parseLong(personId);
+        }
+        catch (NumberFormatException | NullPointerException e){
+            return false;
+        }
+        return true;
     }
 }
