@@ -27,8 +27,6 @@ public class PersonDAO {
     @Inject
     private StatisticsDAO statisticsDAO;
 
-    @Inject
-    UserTransaction userTransaction;
 
 
     public Person getPerson(Long id){
@@ -69,10 +67,13 @@ public class PersonDAO {
     public void deleteAllPersons() throws Exception{
         ArrayList<Person> persons = (ArrayList<Person>) getAllPersons();
         for(Person person : persons){
-            userTransaction.begin();
             entityManager.remove(entityManager.contains(person)? person : entityManager.merge(person));
-            userTransaction.commit();
         }
+    }
+
+    public boolean containsPerson(Long id){
+
+        return entityManager.contains(entityManager.find(Person.class,id));
     }
 
 }

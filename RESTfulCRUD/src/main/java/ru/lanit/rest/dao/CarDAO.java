@@ -26,9 +26,6 @@ public class CarDAO {
     @Inject
     private StatisticsDAO statisticsDAO;
 
-    @Resource
-    UserTransaction userTransaction;
-
 
     public Car getCar(Long id){
         return entityManager.find(Car.class, id);
@@ -68,9 +65,7 @@ public class CarDAO {
     public void deleteAllCars() throws Exception {
         ArrayList<Car> cars = (ArrayList<Car>)getAllCars();
        for(Car car : cars){
-           userTransaction.begin();
            entityManager.remove(entityManager.contains(car)? car : entityManager.merge(car));
-           userTransaction.commit();
            checkVendorUniqueness();
        }
     }
