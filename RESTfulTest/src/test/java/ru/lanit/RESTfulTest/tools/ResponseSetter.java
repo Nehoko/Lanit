@@ -5,7 +5,7 @@ import io.restassured.response.Response;
 
 public class ResponseSetter {
 
-    public Response get(String uri){
+    public static Response get(String uri){
         return RestAssured
                 .given()
                 .log()

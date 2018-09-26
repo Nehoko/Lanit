@@ -12,6 +12,10 @@ import javax.transaction.Transactional;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,7 +32,7 @@ public class PersonService {
     @GET
     public Response getPersonWithCars(@QueryParam("personid") String personId){
 
-        if (!personIdIsLong(personId))
+        if (!isPersonIdIsLong(personId))
             return Response.status(Response.Status.BAD_REQUEST).build();
         Long id = Long.parseLong(personId);
 
@@ -47,7 +51,11 @@ public class PersonService {
     @Transactional
     @Consumes(MediaType.APPLICATION_JSON)
     public Response addPerson(Person person){
+        if(isDateValid(person.getBirthdate()) || !isPersonIdIsLong(person.getId().toString()))
+            return Response.status(Response.Status.BAD_REQUEST).build();
+
         personDAO.addPerson(person);
+
         if (personDAO.getPerson(person.getId())!=null)
         return Response.status(Response.Status.OK).build();
         else{
@@ -80,14 +88,33 @@ public class PersonService {
         return cars;
     }
 
-    private boolean personIdIsLong(String personId){
+    private boolean isPersonIdIsLong(String personId){
 
         try{
-            Long id = Long.parseLong(personId);
+            Long.parseLong(personId);
         }
         catch (NumberFormatException | NullPointerException e){
             return false;
         }
         return true;
+    }
+
+    private boolean isDateValid(final String date) {
+        Date currentDate = new Date();
+        String formatString = "dd.MM.yyyy";
+        boolean isInvalidFormat = false;
+        Date dateObj;
+        try {
+            SimpleDateFormat sdf = (SimpleDateFormat) DateFormat.getDateInstance();
+            sdf.applyPattern(formatString);
+            sdf.setLenient(false);
+            dateObj = sdf.parse(date);
+            if (date.equals(sdf.format(dateObj)) && dateObj.compareTo(currentDate)>0) {
+                isInvalidFormat = false;
+            }
+        } catch (ParseException e) {
+            isInvalidFormat = true;
+        }
+        return isInvalidFormat;
     }
 }

@@ -29,7 +29,7 @@ public class CarService {
         carDAO.addCar(car);
         Car car1 = carDAO.getCar(car.getId());
         String model = car1.getModel();
-        if (car1!=null && model.matches("^[a-zA-Z0-9]+-[a-zA-Z0-9]+$"))
+        if (car1!=null && car1.getId()!=null && model!=null && car1.getHorsepower()!=null && car1.getOwnerId()!=null && model.matches("^[a-zA-Z0-9]+-[a-zA-Z0-9]+$"))
         return Response.status(Response.Status.OK).build();
         else {
             return Response.status(Response.Status.BAD_REQUEST).build();

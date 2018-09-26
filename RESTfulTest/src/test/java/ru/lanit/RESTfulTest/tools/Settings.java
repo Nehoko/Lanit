@@ -4,7 +4,7 @@ import io.restassured.RestAssured;
 
 public class Settings {
 
-    public void setup(){
+    public static void setup(){
         String port = System.getProperty("server.port");
         RestAssured.port = (port==null)? 8080 : Integer.valueOf(port);
 

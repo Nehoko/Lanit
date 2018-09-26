@@ -7,7 +7,7 @@ import org.json.JSONObject;
 
 public class RequestSetter {
 
-    public RequestSpecification post(JSONObject requestBody){
+    public static RequestSpecification post(JSONObject requestBody){
         return RestAssured
                 .given()
                 .log()

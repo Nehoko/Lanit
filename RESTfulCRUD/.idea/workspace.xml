@@ -10,74 +10,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc332c5f-371b-4401-9ea5-9e58814befb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/parts/CarPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/parts/Clean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/parts/PersonPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/parts/PersonWithCarsGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/parts/Statistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/InvalidTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/ValidTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/CarCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/PersonCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../IntelliJ13.0-JerseyWS" beforeDir="false" afterPath="$PROJECT_DIR$/../IntelliJ13.0-JerseyWS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/PersonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/JaxRsActivator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/JaxRsActivator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dao/CarDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dao/CarDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dao/PersonDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dao/PersonDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dao/StatisticsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dao/StatisticsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dto/CarDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dto/CarDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dto/PersonDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dto/PersonDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/model/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/model/Person.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/model/Statistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/model/Statistics.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/service/CarService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/service/MainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/service/MainService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/service/PersonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/utils/Resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/utils/Resources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/JaxRsActivator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/JaxRsActivator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dao/CarDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dao/CarDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dao/PersonDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dao/PersonDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dao/StatisticsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dao/StatisticsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dto/CarDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dto/CarDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dto/PersonDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dto/PersonDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/model/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/model/Person.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/model/Statistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/model/Statistics.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/service/CarService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/service/MainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/service/MainService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/service/PersonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/utils/Resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/utils/Resources.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RESTfulTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/CarPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/CarPostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/CleanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/CleanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/PersonPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/PersonPostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/PersonWithCarsGetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/PersonWithCarsGetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/run/RunTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/StatisticsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/StatisticsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/Command line suite/Command line test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/Command line suite/Command line test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/Command line suite/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/TestSuite.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/junitreports/TEST-CarPostTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/junitreports/TEST-CleanTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/junitreports/TEST-PersonPostTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/junitreports/TEST-PersonWithCarsGetTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/Command line test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/Command line suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/surefire-reports/testng.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/CarPostTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/CarPostTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/CleanTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/CleanTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/PersonPostTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/PersonPostTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/PersonWithCarsGetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/PersonWithCarsGetTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/RunTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/StatisticsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/StatisticsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/CarPostTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/CleanTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/PersonPostTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/PersonWithCarsGetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/StatisticsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tests/run/RunTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/BodyChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/BodyChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/RequestSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/RequestSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/ResponseSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/ResponseSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/StatusCodeChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/src/test/java/ru/lanit/RESTfulTest/tools/StatusCodeChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/CarPostTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/CleanTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/PersonPostTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/PersonWithCarsGetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/StatisticsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tests/run/RunTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tools/BodyChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tools/BodyChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tools/RequestSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tools/RequestSetter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tools/ResponseSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tools/ResponseSetter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tools/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tools/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tools/StatusCodeChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/target/test-classes/ru/lanit/RESTfulTest/tools/StatusCodeChecker.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -150,27 +146,29 @@
     <session id="61532632">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.49" value="2" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="car" value="2" />
           <entry key="class" value="15" />
-          <entry key="java" value="98" />
+          <entry key="java" value="100" />
           <entry key="person" value="1" />
           <entry key="sql" value="1" />
           <entry key="xml" value="13" />
@@ -180,20 +178,20 @@
         <counts>
           <entry key="CLASS" value="15" />
           <entry key="Database Element" value="3" />
-          <entry key="JAVA" value="98" />
+          <entry key="JAVA" value="100" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7191" />
+          <entry key="java" value="7932" />
           <entry key="xml" value="548" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7191" />
+          <entry key="JAVA" value="7932" />
           <entry key="XML" value="548" />
         </counts>
       </usages-collector>
@@ -201,11 +199,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+            <state relative-caret-position="374">
+              <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -213,8 +211,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="64" column="56" lean-forward="true" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+            <state relative-caret-position="850">
+              <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -222,8 +220,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="697">
+              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -234,8 +232,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/PersonService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1000">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="1564">
+              <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="687">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
         </entry>
@@ -282,13 +292,13 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/dto/PersonDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/CarDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/PersonDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Statistics.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/PersonService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/PersonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Person.java" />
       </list>
     </option>
   </component>
@@ -329,10 +339,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="454" />
-    <option name="y" value="-16" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -436,6 +446,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rest" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RESTfulCRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RESTfulCRUD" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RESTfulCRUD" type="b2602c69:ProjectViewProjectNode" />
@@ -671,17 +690,19 @@
       <workItem from="1537543463310" duration="1831000" />
       <workItem from="1537773798361" duration="4391000" />
       <workItem from="1537862795346" duration="7815000" />
+      <workItem from="1537947300317" duration="8723000" />
+      <workItem from="1537966806580" duration="718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106512000" />
+    <option name="totallyTimeSpent" value="115953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13059701" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13272922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -733,6 +754,12 @@
           <line>78</line>
           <properties />
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Person.java</url>
+          <line>77</line>
+          <properties class="ru.lanit.rest.model.Person" method="setBirthdate" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -804,13 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/utils/Resources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -922,13 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/JaxRsActivator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -947,10 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -972,10 +981,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/utils/Resources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="697">
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -984,22 +1014,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/PersonService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1000">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="1564">
+          <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="64" column="56" lean-forward="true" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        <state relative-caret-position="687">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
