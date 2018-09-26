@@ -51,7 +51,7 @@ public class PersonService {
     @Transactional
     @Consumes(MediaType.APPLICATION_JSON)
     public Response addPerson(Person person){
-        if(isDateValid(person.getBirthdate()) || !isPersonIdIsLong(person.getId().toString()))
+        if(!isDateValid(person.getBirthdate()) || !isPersonIdIsLong(person.getId().toString()))
             return Response.status(Response.Status.BAD_REQUEST).build();
 
         personDAO.addPerson(person);
@@ -92,17 +92,17 @@ public class PersonService {
 
         try{
             Long.parseLong(personId);
+            return true;
         }
         catch (NumberFormatException | NullPointerException e){
             return false;
         }
-        return true;
     }
 
     private boolean isDateValid(final String date) {
         Date currentDate = new Date();
         String formatString = "dd.MM.yyyy";
-        boolean isInvalidFormat = false;
+        boolean isInvalidFormat;
         Date dateObj;
         try {
             SimpleDateFormat sdf = (SimpleDateFormat) DateFormat.getDateInstance();
@@ -111,6 +111,9 @@ public class PersonService {
             dateObj = sdf.parse(date);
             if (date.equals(sdf.format(dateObj)) && dateObj.compareTo(currentDate)>0) {
                 isInvalidFormat = false;
+            }
+            else {
+                isInvalidFormat = true;
             }
         } catch (ParseException e) {
             isInvalidFormat = true;
