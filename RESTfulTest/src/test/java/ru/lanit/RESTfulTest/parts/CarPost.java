@@ -18,9 +18,11 @@ public class CarPost {
         int code = response.getStatusCode();
         String body = response.asString();
 
-
+        if(expected!=null && bodyExpected!=null) {
             StatusCodeChecker.check(code, expected);
             BodyChecker.check(body, bodyExpected);
-
+        }else if (expected!=null){
+            StatusCodeChecker.check(code, expected);
+        }
     }
 }

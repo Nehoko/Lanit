@@ -1,6 +1,7 @@
 package ru.lanit.rest.model;
 
 import org.codehaus.jackson.annotate.JsonManagedReference;
+import ru.lanit.rest.pojo.Validator;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -71,6 +72,7 @@ public class Car implements Serializable {
     }
 
     public void setHorsepower(Integer horsepower) {
+        if(Validator.isHorsePowerValid(horsepower.toString()))
         this.horsepower = horsepower;
     }
 

@@ -2,12 +2,17 @@ package ru.lanit.rest.model;
 
 
 import org.codehaus.jackson.annotate.JsonBackReference;
+import ru.lanit.rest.pojo.Validator;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
 import java.util.Date;
 import java.util.Set;
 
@@ -43,6 +48,7 @@ public class Person implements Serializable {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+
     }
 
     public Person(Long id){
@@ -78,11 +84,22 @@ public class Person implements Serializable {
     public void setBirthdate(String birthdate) throws ParseException {
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
-        this.birthdate = sdf.parse(birthdate);
+        if(Validator.isDateValid(birthdate)) {
+            this.birthdate = sdf.parse(birthdate);
+        }
+        else{
+            this.birthdate = null;
+        }
     }
 
     public Set<Car> getCars() {
         return cars;
     }
 
+    public int getAge() throws ParseException {
+
+        LocalDate birthDate = this.birthdate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+
+        return Period.between(birthDate, LocalDate.now()).getYears();
+    }
 }
