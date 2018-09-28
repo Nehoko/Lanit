@@ -8,16 +8,16 @@ import ru.lanit.RESTfulTest.tools.StatusCodeChecker;
 
 public class PersonWithCarsGet extends Assert {
 
-    public static void getPersonWithCarsTest(String id, Integer expected, String bodyExpected){
+    public static void getTest(String id, Integer expected, String bodyExpected){
         Response response = ResponseSetter.get("/personwithcars?personid="+id);
 
         int code = response.getStatusCode();
         String body = response.asString();
 
-        if(id!=null && expected!=null && bodyExpected!=null) {
+        if(expected!=null && bodyExpected!=null) {
             StatusCodeChecker.check(code, expected);
             BodyChecker.check(body, bodyExpected);
-        }else if(id!=null && expected!=null && bodyExpected==null){
+        }else if(expected!=null){
             StatusCodeChecker.check(code, expected);
         }
     }

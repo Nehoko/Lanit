@@ -30,9 +30,9 @@ public class ValidTest {
 
         JSONObject car1 = CarCreator.createCar(1L, "BMW-X5", 250, 1L);
 
-        CarPost.postCarTest(car1, 200, "");
+        CarPost.postTest(car1, 200, "");
 
-        PersonWithCarsGet.getPersonWithCarsTest("1", 200,
+        PersonWithCarsGet.getTest("1", 200,
                 "{" +
                         "\"id\":1," +
                         "\"name\":\"Eliah\"," +

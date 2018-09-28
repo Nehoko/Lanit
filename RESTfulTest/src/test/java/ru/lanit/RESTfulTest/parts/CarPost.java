@@ -9,7 +9,7 @@ import ru.lanit.RESTfulTest.tools.StatusCodeChecker;
 
 public class CarPost {
 
-    public static void postCarTest(JSONObject car, Integer expected, String bodyExpected){
+    public static void postTest(JSONObject car, Integer expected, String bodyExpected){
 
         RequestSpecification request = RequestSetter.post(car);
 

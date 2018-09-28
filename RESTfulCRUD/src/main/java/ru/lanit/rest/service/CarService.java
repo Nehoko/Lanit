@@ -31,26 +31,30 @@ public class CarService {
         Response ok = Response.status(Response.Status.OK).build();
         Response badRequest = Response.status(Response.Status.BAD_REQUEST).build();
 
-        Person owner = personDAO.getPerson(car.getOwnerId());
         try {
-            if(carDAO.getCar(car.getId())==null && owner!=null && owner.getAge()>18) {
+            Long ownerId = car.getOwnerId();
+            String model = car.getModel();
+
+            if(car.getId() != null && model != null && car.getHorsepower() != null && car.getOwnerId() != null
+                    && model.matches("^[a-zA-Z0-9]+-[a-zA-Z0-9]+$") && carDAO.getCar(car.getId())==null
+                    && personDAO.getPerson(ownerId)!=null && personDAO.getPerson(ownerId).getAge()>18) {
+                Person owner = personDAO.getPerson(ownerId);
                 car.setOwner(owner);
             }
             else {
                 return badRequest;
             }
-        } catch (ParseException e) {
+        } catch (ParseException | NullPointerException e) {
             return badRequest;
         }
         carDAO.addCar(car);
         Car car1 = carDAO.getCar(car.getId());
-        String model = car1.getModel();
-        if (car1.getId() != null && model != null && car1.getHorsepower() != null && car1.getOwnerId() != null && model.matches("^[a-zA-Z0-9]+-[a-zA-Z0-9]+$"))
-        return ok;
-        else {
+
+        if(car1!=null) {
+            return ok;
+        }
+        else{
             return badRequest;
         }
     }
-
-
 }
