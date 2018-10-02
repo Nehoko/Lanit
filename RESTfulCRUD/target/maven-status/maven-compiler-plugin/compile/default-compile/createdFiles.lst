@@ -1,5 +1,8 @@
+ru\lanit\rest\dto\CarDTO.class
 ru\lanit\rest\service\CarService.class
+ru\lanit\rest\pojo\Validator.class
 ru\lanit\rest\dao\CarDAO.class
+ru\lanit\rest\dto\PersonDTO.class
 ru\lanit\rest\utils\Resources.class
 ru\lanit\rest\service\MainService.class
 ru\lanit\rest\model\Car.class

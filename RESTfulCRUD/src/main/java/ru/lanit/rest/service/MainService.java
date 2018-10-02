@@ -32,7 +32,7 @@ public class MainService {
     @Path("statistics")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getStatistics(){
+    public Response getStatistics() {
         String response = statisticsDAO.getStatistics().toString();
         return Response.status(Response.Status.OK).entity(response).build();
     }
@@ -41,13 +41,13 @@ public class MainService {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Transactional
-    public Response clearAll(){
+    public Response clearAll() {
         try {
+            carDAO.deleteAllCars();
+            personDAO.deleteAllPersons();
             statisticsDAO.getStatistics().setUniquevendorcount(0L);
             statisticsDAO.getStatistics().setPersoncount(0L);
             statisticsDAO.getStatistics().setCarcount(0L);
-            carDAO.deleteAllCars();
-            personDAO.deleteAllPersons();
             return Response.status(Response.Status.OK).build();
         } catch (Exception e) {
             e.printStackTrace();
