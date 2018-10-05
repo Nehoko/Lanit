@@ -81,11 +81,11 @@ public class CarDAO {
         }
 
         for(int i = 0 ; i<vendors.size(); i++){
-            String vendor = vendors.get(i);
+            String vendor = vendors.get(i).toLowerCase();
             boolean match = false;
             if(vendors.size()>1) {
                 for (int j = i + 1; j < vendors.size(); j++) {
-                    String vendorTwo = vendors.get(j);
+                    String vendorTwo = vendors.get(j).toLowerCase();
                     if (vendor.equals(vendorTwo))
                         match = true;
                 }

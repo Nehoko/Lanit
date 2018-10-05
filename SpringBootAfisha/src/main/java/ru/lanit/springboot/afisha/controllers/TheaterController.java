@@ -10,11 +10,11 @@ import ru.lanit.springboot.afisha.entities.Afisha;
 import ru.lanit.springboot.afisha.entities.Theater;
 import ru.lanit.springboot.afisha.repos.AfishaRepository;
 import ru.lanit.springboot.afisha.repos.TheaterRepository;
-
-import javax.persistence.EntityManager;
+import ru.lanit.springboot.afisha.service.AfishaService;
 
 @Controller
 public class TheaterController {
+
     @Autowired
     TheaterRepository theaterRepository;
 
@@ -22,7 +22,8 @@ public class TheaterController {
     AfishaRepository afishaRepository;
 
     @Autowired
-    EntityManager entityManager;
+    AfishaService afishaService;
+
 
     @GetMapping("/theater")
     public String showTheaters(
@@ -48,18 +49,12 @@ public class TheaterController {
             @PathVariable Theater theater,
             Model model
     ){
-
-//        Session session = entityManager.unwrap(Session.class);
-//        SessionFactory sessionFactory = session.getSessionFactory();
-//        sessionFactory.getCurrentSession();
-
-//        entityManager.isJoinedToTransaction();
         Iterable<Afisha> afisha;
 
         if(search!=null && !search.isEmpty())
-               afisha = afishaRepository.findByTheaterAndName(theater, search);
+               afisha = afishaService.getAfishaByTheaterAndName(theater, search);
         else{
-            afisha = theater.getPerformances();
+            afisha = afishaService.getAfishaByTheater(theater);
         }
 
         model.addAttribute("afisha", afisha);

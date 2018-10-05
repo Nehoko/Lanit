@@ -10,26 +10,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc332c5f-371b-4401-9ea5-9e58814befb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/CarServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/MainServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/PersonServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/CarCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/PersonCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/RequestSetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/ResponseSetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OCA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OCA/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OCA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OCA/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OCA/OCA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OCA/src/ru/lanit/oca/_C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootAfisha/src/main/java/ru/lanit/springboot/afisha/service/AfishaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../IntelliJ13.0-JerseyWS" beforeDir="false" afterPath="$PROJECT_DIR$/../IntelliJ13.0-JerseyWS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/CarDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/service/MainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/service/MainService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/service/MainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/service/MainService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dao/CarDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/dao/CarDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/model/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/model/Statistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/model/Statistics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RESTfulCRUD/WEB-INF/classes/ru/lanit/rest/service/CarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dao/CarDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/dao/CarDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/model/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/model/Statistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/model/Statistics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/rest/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/rest/service/CarService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RESTfulTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RESTfulTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootAfisha/src/main/java/ru/lanit/springboot/afisha/AfishaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootAfisha/src/main/java/ru/lanit/springboot/afisha/AfishaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootAfisha/src/main/java/ru/lanit/springboot/afisha/controllers/TheaterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootAfisha/src/main/java/ru/lanit/springboot/afisha/controllers/TheaterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootAfisha/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootAfisha/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,17 +108,18 @@
     <session id="61532632">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.38" value="2" />
-          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.49" value="2" />
@@ -120,7 +127,7 @@
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -128,7 +135,7 @@
           <entry key="car" value="2" />
           <entry key="class" value="15" />
           <entry key="gitignore" value="2" />
-          <entry key="java" value="123" />
+          <entry key="java" value="130" />
           <entry key="person" value="1" />
           <entry key="pom" value="1" />
           <entry key="sql" value="1" />
@@ -139,7 +146,7 @@
         <counts>
           <entry key="CLASS" value="15" />
           <entry key="Database Element" value="3" />
-          <entry key="JAVA" value="123" />
+          <entry key="JAVA" value="130" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="16" />
@@ -148,13 +155,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="18" />
-          <entry key="java" value="11913" />
+          <entry key="java" value="11929" />
           <entry key="xml" value="597" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11913" />
+          <entry key="JAVA" value="11929" />
           <entry key="PLAIN_TEXT" value="18" />
           <entry key="XML" value="597" />
         </counts>
@@ -164,54 +171,72 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/PersonServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+            <state relative-caret-position="238">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#1030#1031#0" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
+                <element signature="e#1318#1319#0" expanded="true" />
+                <element signature="e#1346#1347#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/CarServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="306">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Statistics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
               <folding>
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
+                <element signature="e#1845#1846#0" expanded="true" />
+                <element signature="e#1885#1886#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/CarDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
+            <state relative-caret-position="323">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/MainServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/PersonDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-              <folding>
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="969">
+              <caret line="75" column="75" selection-start-line="75" selection-start-column="75" selection-end-line="75" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/StatisticsDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="65" column="53" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -225,7 +250,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/RequestSetter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -233,7 +258,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="2890">
               <caret line="170" selection-start-line="170" selection-end-line="170" />
             </state>
           </provider>
@@ -284,14 +309,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/dto/CarDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/dto/PersonDTO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/CarDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/PersonDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Statistics.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/pojo/Validator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/PersonService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/CarCreator.java" />
@@ -305,6 +326,10 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/PersonServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/CarServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Statistics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/CarDAO.java" />
       </list>
     </option>
   </component>
@@ -345,7 +370,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -383,7 +408,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -424,51 +448,31 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RESTfulCRUD" type="b2602c69:ProjectViewProjectNode" />
               <item name="RESTfulCRUD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RESTfulCRUD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RESTfulCRUD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RESTfulCRUD" type="b2602c69:ProjectViewProjectNode" />
               <item name="RESTfulCRUD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RESTfulCRUD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RESTfulCRUD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RESTfulCRUD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RESTfulCRUD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -519,7 +523,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ru.lanit.rest.service.tests in RESTfulCRUD">
+  <component name="RunManager" selected="JBoss Server.WildFly">
     <configuration name="WildFly" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 9.0.2.Final" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="COMMON_VM_ARGUMENTS" value="-Djboss.bind.address.management=0.0.0.0 -Djboss.bind.address=0.0.0.0 -Djboss.bind.address.unsecure=0.0.0.0" />
@@ -794,6 +798,10 @@
       <workItem from="1538138133202" duration="833000" />
       <workItem from="1538141390543" duration="1833000" />
       <workItem from="1538465707104" duration="9195000" />
+      <workItem from="1538550812147" duration="1283000" />
+      <workItem from="1538559289250" duration="1537000" />
+      <workItem from="1538641787295" duration="1031000" />
+      <workItem from="1538727649801" duration="599000" />
     </task>
     <servers />
   </component>
@@ -830,12 +838,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157974000" />
+    <option name="totallyTimeSpent" value="162424000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13539445" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13965885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -879,20 +888,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>personDAO.getPerson(ownerId).getAge()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>car.getOwnerId()</expression-string>
         <language-id>JAVA</language-id>
@@ -935,11 +937,6 @@
         <expression-string>new Date().getTime()- owner.birthdate.getTime()</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>java.util.Date</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>owner.getBirthdate()</expression-string>
-        <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
@@ -1093,49 +1090,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/PersonDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="75" column="75" selection-start-line="75" selection-start-column="75" selection-end-line="75" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/StatisticsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Statistics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
-          <folding>
-            <element signature="e#1845#1846#0" expanded="true" />
-            <element signature="e#1885#1886#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/utils/Resources.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/CarDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="64" column="50" lean-forward="true" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="74" column="62" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -1144,9 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="63" column="102" selection-start-line="63" selection-start-column="102" selection-end-line="63" selection-end-column="102" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1157,30 +1112,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#1346#1347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/pojo/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,23 +1126,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="170" selection-start-line="170" selection-end-line="170" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/CarServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/CarServiceTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1229,70 +1148,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/RequestSetter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/PersonServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="425">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/CarServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/MainServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#1318#1319#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/CarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Statistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+          <folding>
+            <element signature="e#1845#1846#0" expanded="true" />
+            <element signature="e#1885#1886#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/PersonDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="75" column="75" selection-start-line="75" selection-start-column="75" selection-end-line="75" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/StatisticsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/model/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="65" column="53" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/ResponseSetter.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/PersonServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tools/RequestSetter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/MainServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2890">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/lanit/rest/service/tests/CarServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/dao/CarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/lanit/rest/service/MainService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
+        <state relative-caret-position="323">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
         </state>
       </provider>
     </entry>

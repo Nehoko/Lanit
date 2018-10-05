@@ -121,7 +121,7 @@ public class Statistics implements Serializable {
 
     @Override
     public String toString() {
-        return "Statistics{" +
+        return "{" +
                 "personcount=" + personcount +
                 ", carcount=" + carcount +
                 ", uniquevendorcount=" + uniquevendorcount +

@@ -36,8 +36,8 @@ public class CarService {
             String model = car.getModel();
 
             if(car.getId() != null && model != null && car.getHorsepower() != null && car.getOwnerId() != null
-                    && model.matches("^[a-zA-Z0-9]+-[a-zA-Z0-9]+$") && carDAO.getCar(car.getId())==null
-                    && personDAO.getPerson(ownerId)!=null && personDAO.getPerson(ownerId).getAge()>18) {
+                    && model.matches("^[a-zA-Z0-9]+-[a-zA-Z0-9\\-]+$") && carDAO.getCar(car.getId())==null
+                    && personDAO.getPerson(ownerId)!=null && personDAO.getPerson(ownerId).getAge()>=18) {
                 Person owner = personDAO.getPerson(ownerId);
                 car.setOwner(owner);
             }

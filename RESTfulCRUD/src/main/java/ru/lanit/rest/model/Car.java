@@ -63,7 +63,7 @@ public class Car implements Serializable {
     }
 
     public void setModel(String model) {
-        if(model.matches("^[a-zA-Z0-9]+-[a-zA-Z0-9]+$"))
+        if(model.matches("^[a-zA-Z0-9]+-[a-zA-Z0-9\\-]+$"))
         this.model = model;
     }
 
