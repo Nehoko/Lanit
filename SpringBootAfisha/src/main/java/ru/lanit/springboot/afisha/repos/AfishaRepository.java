@@ -13,4 +13,7 @@ public interface AfishaRepository extends CrudRepository<Afisha, Integer> {
     List<Afisha> findByName(String name);
     List<Afisha> findByTheater(Theater theater);
     List<Afisha> findByTheaterAndName(Theater theater, String name);
+
+    List<Afisha> getAfishaByTheater(Theater theater);
+    List<Afisha> getAfishaByTheaterAndName(Theater theater, String name);
 }

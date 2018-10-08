@@ -51,6 +51,8 @@ public class TheaterController {
     ){
         Iterable<Afisha> afisha;
 
+
+
         if(search!=null && !search.isEmpty())
                afisha = afishaService.getAfishaByTheaterAndName(theater, search);
         else{
